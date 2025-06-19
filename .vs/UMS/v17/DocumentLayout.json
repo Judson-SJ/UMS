@@ -1,0 +1,399 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\views\\studentsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\studentsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\views\\examform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\examform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\ums\\views\\roomform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\roomform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\data\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\data\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\ums\\views\\marksform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\marksform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\ums\\views\\coursesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\coursesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\data\\dbcon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\data\\dbcon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\ums\\views\\usersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\usersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\ums\\views\\lecturersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\lecturersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\ums\\views\\studentsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\studentsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\views\\coursesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\coursesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\ums\\views\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\ums\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\ums\\views\\timetableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\timetableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\views\\timetableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\timetableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\ums\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\ums\\views\\examform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\examform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\views\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\views\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\views\\lecturersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\lecturersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|c:\\users\\sjjos\\desktop\\unicom tic\\ums\\ums\\views\\marksform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64930F3A-26AB-475D-AFEE-B6880C0D851A}|UMS\\UMS.csproj|solutionrelative:ums\\views\\marksform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentsForm.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\StudentsForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\StudentsForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\StudentsForm.cs",
+              "RelativeToolTip": "UMS\\Views\\StudentsForm.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAASwAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:22:13.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DbCon.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Data\\DbCon.cs",
+              "RelativeDocumentMoniker": "UMS\\Data\\DbCon.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Data\\DbCon.cs",
+              "RelativeToolTip": "UMS\\Data\\DbCon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:05:10.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Data\\DatabaseInitializer.cs",
+              "RelativeDocumentMoniker": "UMS\\Data\\DatabaseInitializer.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Data\\DatabaseInitializer.cs",
+              "RelativeToolTip": "UMS\\Data\\DatabaseInitializer.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAQwFYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:03:58.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\LoginForm.Designer.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\LoginForm.Designer.cs",
+              "RelativeToolTip": "UMS\\Views\\LoginForm.Designer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:16:43.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\MainForm.Designer.cs",
+              "RelativeToolTip": "UMS\\Views\\MainForm.Designer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAArwBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:59:20.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StaffForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\StaffForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\StaffForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\StaffForm.cs [Design]",
+              "RelativeToolTip": "UMS\\Views\\StaffForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:08:09.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoomForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\RoomForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\RoomForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\RoomForm.cs [Design]",
+              "RelativeToolTip": "UMS\\Views\\RoomForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:45:06.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExamForm.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\ExamForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\ExamForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\ExamForm.cs",
+              "RelativeToolTip": "UMS\\Views\\ExamForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:42:02.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ExamForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\ExamForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\ExamForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\ExamForm.cs [Design]",
+              "RelativeToolTip": "UMS\\Views\\ExamForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:31:47.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MarksForm.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\MarksForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\MarksForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\MarksForm.cs",
+              "RelativeToolTip": "UMS\\Views\\MarksForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:21:18.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MarksForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\MarksForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\MarksForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\MarksForm.cs [Design]",
+              "RelativeToolTip": "UMS\\Views\\MarksForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T15:09:30.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsersForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\UsersForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\UsersForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\UsersForm.cs [Design]",
+              "RelativeToolTip": "UMS\\Views\\UsersForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T14:26:26.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LecturersForm.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\LecturersForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\LecturersForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\LecturersForm.cs",
+              "RelativeToolTip": "UMS\\Views\\LecturersForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T11:32:55.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LecturersForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\LecturersForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\LecturersForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\LecturersForm.cs [Design]",
+              "RelativeToolTip": "UMS\\Views\\LecturersForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:58:36.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TimeTableForm.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\TimeTableForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\TimeTableForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\TimeTableForm.cs",
+              "RelativeToolTip": "UMS\\Views\\TimeTableForm.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAMwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T04:51:09.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TimeTableForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\TimeTableForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\TimeTableForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\TimeTableForm.cs [Design]",
+              "RelativeToolTip": "UMS\\Views\\TimeTableForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T04:48:31.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Program.cs",
+              "RelativeDocumentMoniker": "UMS\\Program.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Program.cs",
+              "RelativeToolTip": "UMS\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T04:45:27.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CoursesForm.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\CoursesForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\CoursesForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\CoursesForm.cs",
+              "RelativeToolTip": "UMS\\Views\\CoursesForm.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:12:08.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CoursesForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\CoursesForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\CoursesForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\CoursesForm.cs [Design]",
+              "RelativeToolTip": "UMS\\Views\\CoursesForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T03:04:13.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\LoginForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\LoginForm.cs [Design]",
+              "RelativeToolTip": "UMS\\Views\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T16:45:27.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\LoginForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\LoginForm.cs",
+              "RelativeToolTip": "UMS\\Views\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T17:29:29.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\MainForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\MainForm.cs [Design]",
+              "RelativeToolTip": "UMS\\Views\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:05:28.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\StudentsForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\StudentsForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\StudentsForm.cs [Design]",
+              "RelativeToolTip": "UMS\\Views\\StudentsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:51:23.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "UMS\\Views\\MainForm.cs",
+              "ToolTip": "C:\\Users\\sjjos\\Desktop\\Unicom Tic\\UMS\\UMS\\Views\\MainForm.cs",
+              "RelativeToolTip": "UMS\\Views\\MainForm.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAIA1wFgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T18:14:11.535Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
