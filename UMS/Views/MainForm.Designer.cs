@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             Left_panel = new Panel();
+            Subjects_button = new Button();
             Logo_Pic_Box = new PictureBox();
             Exam_button = new Button();
             Rooms_button = new Button();
@@ -51,6 +52,7 @@
             // Left_panel
             // 
             Left_panel.BackColor = SystemColors.ControlLight;
+            Left_panel.Controls.Add(Subjects_button);
             Left_panel.Controls.Add(Logo_Pic_Box);
             Left_panel.Controls.Add(Exam_button);
             Left_panel.Controls.Add(Rooms_button);
@@ -63,16 +65,30 @@
             Left_panel.Controls.Add(Students_button);
             Left_panel.Dock = DockStyle.Left;
             Left_panel.Location = new Point(0, 0);
+            Left_panel.Margin = new Padding(3, 2, 3, 2);
             Left_panel.Name = "Left_panel";
-            Left_panel.Size = new Size(159, 533);
+            Left_panel.Size = new Size(139, 400);
             Left_panel.TabIndex = 2;
+            // 
+            // Subjects_button
+            // 
+            Subjects_button.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            Subjects_button.Location = new Point(10, 172);
+            Subjects_button.Margin = new Padding(3, 2, 3, 2);
+            Subjects_button.Name = "Subjects_button";
+            Subjects_button.Size = new Size(122, 23);
+            Subjects_button.TabIndex = 11;
+            Subjects_button.Text = "Subjects ⟫⟫⟫";
+            Subjects_button.UseVisualStyleBackColor = true;
+            Subjects_button.Click += Subjects_button_Click;
             // 
             // Logo_Pic_Box
             // 
             Logo_Pic_Box.Image = (Image)resources.GetObject("Logo_Pic_Box.Image");
-            Logo_Pic_Box.Location = new Point(5, 9);
+            Logo_Pic_Box.Location = new Point(4, 7);
+            Logo_Pic_Box.Margin = new Padding(3, 2, 3, 2);
             Logo_Pic_Box.Name = "Logo_Pic_Box";
-            Logo_Pic_Box.Size = new Size(148, 42);
+            Logo_Pic_Box.Size = new Size(130, 47);
             Logo_Pic_Box.SizeMode = PictureBoxSizeMode.StretchImage;
             Logo_Pic_Box.TabIndex = 10;
             Logo_Pic_Box.TabStop = false;
@@ -80,9 +96,10 @@
             // Exam_button
             // 
             Exam_button.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            Exam_button.Location = new Point(12, 300);
+            Exam_button.Location = new Point(10, 256);
+            Exam_button.Margin = new Padding(3, 2, 3, 2);
             Exam_button.Name = "Exam_button";
-            Exam_button.Size = new Size(139, 31);
+            Exam_button.Size = new Size(122, 23);
             Exam_button.TabIndex = 9;
             Exam_button.Text = "Exam ⟫⟫⟫";
             Exam_button.UseVisualStyleBackColor = true;
@@ -91,9 +108,10 @@
             // Rooms_button
             // 
             Rooms_button.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            Rooms_button.Location = new Point(12, 226);
+            Rooms_button.Location = new Point(10, 201);
+            Rooms_button.Margin = new Padding(3, 2, 3, 2);
             Rooms_button.Name = "Rooms_button";
-            Rooms_button.Size = new Size(139, 31);
+            Rooms_button.Size = new Size(122, 23);
             Rooms_button.TabIndex = 8;
             Rooms_button.Text = "Rooms ⟫⟫⟫";
             Rooms_button.UseVisualStyleBackColor = true;
@@ -102,9 +120,10 @@
             // Users_button
             // 
             Users_button.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            Users_button.Location = new Point(12, 337);
+            Users_button.Location = new Point(10, 284);
+            Users_button.Margin = new Padding(3, 2, 3, 2);
             Users_button.Name = "Users_button";
-            Users_button.Size = new Size(139, 31);
+            Users_button.Size = new Size(122, 23);
             Users_button.TabIndex = 7;
             Users_button.Text = "Users ⟫⟫⟫";
             Users_button.UseVisualStyleBackColor = true;
@@ -113,9 +132,10 @@
             // Lecturers_button
             // 
             Lecturers_button.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            Lecturers_button.Location = new Point(12, 115);
+            Lecturers_button.Location = new Point(10, 86);
+            Lecturers_button.Margin = new Padding(3, 2, 3, 2);
             Lecturers_button.Name = "Lecturers_button";
-            Lecturers_button.Size = new Size(139, 31);
+            Lecturers_button.Size = new Size(122, 23);
             Lecturers_button.TabIndex = 6;
             Lecturers_button.Text = "Lecturers ⟫⟫⟫";
             Lecturers_button.UseVisualStyleBackColor = true;
@@ -124,9 +144,10 @@
             // TimeTable_button
             // 
             TimeTable_button.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            TimeTable_button.Location = new Point(12, 78);
+            TimeTable_button.Location = new Point(10, 58);
+            TimeTable_button.Margin = new Padding(3, 2, 3, 2);
             TimeTable_button.Name = "TimeTable_button";
-            TimeTable_button.Size = new Size(139, 31);
+            TimeTable_button.Size = new Size(122, 23);
             TimeTable_button.TabIndex = 5;
             TimeTable_button.Text = "Time Table ⟫⟫⟫";
             TimeTable_button.UseVisualStyleBackColor = true;
@@ -135,9 +156,10 @@
             // Marks_button
             // 
             Marks_button.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            Marks_button.Location = new Point(12, 263);
+            Marks_button.Location = new Point(10, 228);
+            Marks_button.Margin = new Padding(3, 2, 3, 2);
             Marks_button.Name = "Marks_button";
-            Marks_button.Size = new Size(139, 31);
+            Marks_button.Size = new Size(122, 23);
             Marks_button.TabIndex = 4;
             Marks_button.Text = "Marks ⟫⟫⟫";
             Marks_button.UseVisualStyleBackColor = true;
@@ -146,9 +168,10 @@
             // Courses_button
             // 
             Courses_button.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            Courses_button.Location = new Point(12, 189);
+            Courses_button.Location = new Point(10, 142);
+            Courses_button.Margin = new Padding(3, 2, 3, 2);
             Courses_button.Name = "Courses_button";
-            Courses_button.Size = new Size(139, 31);
+            Courses_button.Size = new Size(122, 23);
             Courses_button.TabIndex = 3;
             Courses_button.Text = "Courses ⟫⟫⟫";
             Courses_button.UseVisualStyleBackColor = true;
@@ -157,9 +180,10 @@
             // Staff_button
             // 
             Staff_button.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            Staff_button.Location = new Point(12, 374);
+            Staff_button.Location = new Point(10, 311);
+            Staff_button.Margin = new Padding(3, 2, 3, 2);
             Staff_button.Name = "Staff_button";
-            Staff_button.Size = new Size(139, 31);
+            Staff_button.Size = new Size(122, 23);
             Staff_button.TabIndex = 2;
             Staff_button.Text = "Staff ⟫⟫⟫";
             Staff_button.UseVisualStyleBackColor = true;
@@ -168,9 +192,10 @@
             // Students_button
             // 
             Students_button.Font = new Font("Times New Roman", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            Students_button.Location = new Point(12, 152);
+            Students_button.Location = new Point(10, 114);
+            Students_button.Margin = new Padding(3, 2, 3, 2);
             Students_button.Name = "Students_button";
-            Students_button.Size = new Size(139, 31);
+            Students_button.Size = new Size(122, 23);
             Students_button.TabIndex = 0;
             Students_button.Text = "Students ⟫⟫⟫";
             Students_button.UseVisualStyleBackColor = true;
@@ -181,16 +206,18 @@
             Top_panel.BackColor = SystemColors.ControlLight;
             Top_panel.Controls.Add(Back_button);
             Top_panel.Dock = DockStyle.Top;
-            Top_panel.Location = new Point(159, 0);
+            Top_panel.Location = new Point(139, 0);
+            Top_panel.Margin = new Padding(3, 2, 3, 2);
             Top_panel.Name = "Top_panel";
-            Top_panel.Size = new Size(815, 39);
+            Top_panel.Size = new Size(713, 29);
             Top_panel.TabIndex = 3;
             // 
             // Back_button
             // 
-            Back_button.Location = new Point(757, 6);
+            Back_button.Location = new Point(662, 4);
+            Back_button.Margin = new Padding(3, 2, 3, 2);
             Back_button.Name = "Back_button";
-            Back_button.Size = new Size(46, 28);
+            Back_button.Size = new Size(40, 21);
             Back_button.TabIndex = 0;
             Back_button.Text = "🔙";
             Back_button.UseVisualStyleBackColor = true;
@@ -200,19 +227,21 @@
             // 
             Main_panel.Dock = DockStyle.Fill;
             Main_panel.ForeColor = SystemColors.ActiveCaptionText;
-            Main_panel.Location = new Point(159, 39);
+            Main_panel.Location = new Point(139, 29);
+            Main_panel.Margin = new Padding(3, 2, 3, 2);
             Main_panel.Name = "Main_panel";
-            Main_panel.Size = new Size(815, 494);
+            Main_panel.Size = new Size(713, 371);
             Main_panel.TabIndex = 4;
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(974, 533);
+            ClientSize = new Size(852, 400);
             Controls.Add(Main_panel);
             Controls.Add(Top_panel);
             Controls.Add(Left_panel);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
             Text = "Dashboard";
             Left_panel.ResumeLayout(false);
@@ -236,5 +265,6 @@
         private Button Rooms_button;
         private Button Exam_button;
         private PictureBox Logo_Pic_Box;
+        private Button Subjects_button;
     }
 }

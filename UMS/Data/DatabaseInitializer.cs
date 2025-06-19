@@ -66,7 +66,7 @@ namespace UMS.Data
                         FOREIGN KEY (CourseId) REFERENCES Courses(CourseId),
                         FOREIGN KEY (LectureId) REFERENCES Lecturers(LectureId)
                     );
-                        CREATE TABLE IF NOT EXISTS Exams (
+                    CREATE TABLE IF NOT EXISTS Exams (
                         ExamID INTEGER,PRIMARY KEY AUTOINCREMENT,
                         Name TEXT NOT NULL,
                         FOREIGN KEY (SubjectId) REFERENCES Subjects(SubjectId)
@@ -77,6 +77,12 @@ namespace UMS.Data
                         Grade TEXT NOT NULL,
                         FOREIGN KEY (ExamId) REFERENCES Exams(ExamId),
                         FOREIGN KEY (StudentId) REFERENCES Students(StudentId)
+                    );
+                    CREATE TABLE IF NOT EXISTS TimeTable (
+                        TimeTableID INTEGER,PRIMARY KEY AUTOINCREMENT,
+                        TimeSlot TEXT NOT NULL,
+                        FOREIGN KEY (SubjectId) REFERENCES Subjects(SubjectId),
+                        FOREIGN KEY (RoomId) REFERENCES Rooms(RoomId)
                     );
 ";
 

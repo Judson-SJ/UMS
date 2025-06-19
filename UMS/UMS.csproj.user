@@ -28,6 +28,9 @@
     <Compile Update="Views\StudentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\SubjectsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\TimeTableForm.cs">
       <SubType>Form</SubType>
     </Compile>

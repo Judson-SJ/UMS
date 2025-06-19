@@ -83,10 +83,16 @@ namespace UMS.Views
         {
             LoadForm(new StaffForm());
         }
+        private void Subjects_button_Click(object sender, EventArgs e)
+        {
+            LoadForm(new SubjectsForm());
+        }
 
         private void Back_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+        
     }
 }

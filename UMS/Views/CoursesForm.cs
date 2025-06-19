@@ -22,21 +22,9 @@ namespace UMS.Views
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void CoursesForm_Load(object sender, EventArgs e)
         {
-            comboBox1.Items.Add("BSc Computer Science");
-            comboBox1.Items.Add("BSc Mathematics");
-            comboBox1.Items.Add("BA English");
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
