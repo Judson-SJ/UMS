@@ -12,7 +12,7 @@ namespace UMS.Models
         public int UserId { get; set; }
         public string LectureName { get; set; }
         public string Address { get; set; }
-        public int PhoneNo { get; set; }
+        public string PhoneNo { get; set; }
 
 
     }

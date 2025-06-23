@@ -36,8 +36,8 @@
             Add_button = new Button();
             ExamID_textBox = new TextBox();
             ExamName_label = new Label();
-            SubjectID_textBox = new TextBox();
             ExamID_label = new Label();
+            SubjectID_comboBox = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -122,13 +122,6 @@
             ExamName_label.Text = "Exam Name :";
             ExamName_label.Click += ExamName_label_Click;
             // 
-            // SubjectID_textBox
-            // 
-            SubjectID_textBox.Location = new Point(650, 18);
-            SubjectID_textBox.Name = "SubjectID_textBox";
-            SubjectID_textBox.Size = new Size(110, 27);
-            SubjectID_textBox.TabIndex = 47;
-            // 
             // ExamID_label
             // 
             ExamID_label.AutoSize = true;
@@ -139,11 +132,20 @@
             ExamID_label.TabIndex = 46;
             ExamID_label.Text = "Exam ID :";
             // 
+            // SubjectID_comboBox
+            // 
+            SubjectID_comboBox.FormattingEnabled = true;
+            SubjectID_comboBox.Location = new Point(650, 18);
+            SubjectID_comboBox.Name = "SubjectID_comboBox";
+            SubjectID_comboBox.Size = new Size(117, 28);
+            SubjectID_comboBox.TabIndex = 58;
+            // 
             // ExamForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(SubjectID_comboBox);
             Controls.Add(ExamName_textBox);
             Controls.Add(SubjectID_label);
             Controls.Add(dataGridView1);
@@ -152,7 +154,6 @@
             Controls.Add(Add_button);
             Controls.Add(ExamID_textBox);
             Controls.Add(ExamName_label);
-            Controls.Add(SubjectID_textBox);
             Controls.Add(ExamID_label);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ExamForm";
@@ -171,7 +172,7 @@
         private Button Add_button;
         private TextBox ExamID_textBox;
         private Label ExamName_label;
-        private TextBox SubjectID_textBox;
         private Label ExamID_label;
+        private ComboBox SubjectID_comboBox;
     }
 }

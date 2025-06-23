@@ -19,17 +19,21 @@ namespace UMS.Data
                     CREATE TABLE IF NOT EXISTS Users (
                         UserId INTEGER PRIMARY KEY AUTOINCREMENT,
                         Password TEXT NOT NULL,
-                        PhoneNo TEXT NOT NULL,
                         Name TEXT NOT NULL,
                         Role TEXT NOT NULL,
-                        Address TEXT NOT NULL,
                     );
+                    CREATE TABLE IF NOT EXISTS Admins (
+                        AdminId INTEGER PRIMARY KEY AUTOINCREMENT,
+                        Name TEXT NOT NULL,
+                        FOREIGN KEY (UserId) REFERENCES Users(UserId)
 
+                    );
                     CREATE TABLE IF NOT EXISTS Staff (
                         StaffId INTEGER PRIMARY KEY AUTOINCREMENT,
                         Name TEXT NOT NULL,
                         Role TEXT NOT NULL,
                         Address TEXT NOT NULL,
+                        PhoneNo TEXT NOT NULL,
                         FOREIGN KEY (UserId) REFERENCES Users(UserId)
                     );
 
@@ -38,8 +42,7 @@ namespace UMS.Data
                         Name TEXT NOT NULL,
                         Address TEXT NOT NULL,
                         Course TEXT NOT NULL,
-                        CourseId INTEGER,
-                        FOREIGN KEY (CourseId) REFERENCES Courses(Id)
+                        PhoneNo TEXT NOT NULL,
                         FOREIGN KEY (UserId) REFERENCES Users(UserId)
                     );
 

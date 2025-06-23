@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace UMS.Views
 {
-    public partial class RoomForm : Form
+    public partial class AdminForm : Form
     {
-        public RoomForm()
+        public AdminForm()
         {
             InitializeComponent();
-        }
-
-        private void RoomType_comboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }

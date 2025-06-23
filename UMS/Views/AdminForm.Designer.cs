@@ -1,6 +1,6 @@
 ﻿namespace UMS.Views
 {
-    partial class StaffForm
+    partial class AdminForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,42 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
+            UserID_comboBox = new ComboBox();
+            AdminID_label = new Label();
             dataGridView1 = new DataGridView();
             Delete_button = new Button();
             Update_button = new Button();
             Add_button = new Button();
-            Address_textBox = new TextBox();
             Name_textBox = new TextBox();
-            StaffID_textBox = new TextBox();
-            Address_label = new Label();
+            UserID_textBox = new TextBox();
             Name_label = new Label();
-            StaffID_label = new Label();
-            UserIDlabel = new Label();
-            UserIDcomboBox = new ComboBox();
-            PhoneNo_textBox = new TextBox();
-            PhoneNo_label = new Label();
+            UserID_label = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
+            // 
+            // UserID_comboBox
+            // 
+            UserID_comboBox.FormattingEnabled = true;
+            UserID_comboBox.Items.AddRange(new object[] { "Admin", "Staff", "Lecture", "Student" });
+            UserID_comboBox.Location = new Point(120, 78);
+            UserID_comboBox.Name = "UserID_comboBox";
+            UserID_comboBox.Size = new Size(204, 28);
+            UserID_comboBox.TabIndex = 41;
+            // 
+            // AdminID_label
+            // 
+            AdminID_label.AutoSize = true;
+            AdminID_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            AdminID_label.Location = new Point(33, 25);
+            AdminID_label.Name = "AdminID_label";
+            AdminID_label.Size = new Size(81, 17);
+            AdminID_label.TabIndex = 40;
+            AdminID_label.Text = "Admin ID :";
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = SystemColors.ControlLight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(14, 218);
+            dataGridView1.Location = new Point(14, 200);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(776, 212);
-            dataGridView1.TabIndex = 41;
+            dataGridView1.Size = new Size(776, 230);
+            dataGridView1.TabIndex = 39;
             // 
             // Delete_button
             // 
             Delete_button.BackColor = SystemColors.WindowFrame;
             Delete_button.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Delete_button.ForeColor = SystemColors.ButtonFace;
-            Delete_button.Location = new Point(452, 174);
+            Delete_button.Location = new Point(452, 142);
             Delete_button.Name = "Delete_button";
             Delete_button.Size = new Size(81, 30);
-            Delete_button.TabIndex = 40;
+            Delete_button.TabIndex = 38;
             Delete_button.Text = "Delete";
             Delete_button.UseVisualStyleBackColor = false;
             // 
@@ -72,10 +87,10 @@
             Update_button.BackColor = SystemColors.WindowFrame;
             Update_button.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Update_button.ForeColor = SystemColors.ButtonFace;
-            Update_button.Location = new Point(328, 174);
+            Update_button.Location = new Point(328, 142);
             Update_button.Name = "Update_button";
             Update_button.Size = new Size(81, 30);
-            Update_button.TabIndex = 39;
+            Update_button.TabIndex = 37;
             Update_button.Text = "Update";
             Update_button.UseVisualStyleBackColor = false;
             // 
@@ -84,43 +99,26 @@
             Add_button.BackColor = SystemColors.GrayText;
             Add_button.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Add_button.ForeColor = SystemColors.ButtonFace;
-            Add_button.Location = new Point(210, 174);
+            Add_button.Location = new Point(210, 142);
             Add_button.Name = "Add_button";
             Add_button.Size = new Size(81, 30);
-            Add_button.TabIndex = 38;
+            Add_button.TabIndex = 36;
             Add_button.Text = "Add";
             Add_button.UseVisualStyleBackColor = false;
-            // 
-            // Address_textBox
-            // 
-            Address_textBox.Location = new Point(395, 64);
-            Address_textBox.Name = "Address_textBox";
-            Address_textBox.Size = new Size(299, 27);
-            Address_textBox.TabIndex = 37;
             // 
             // Name_textBox
             // 
             Name_textBox.Location = new Point(395, 20);
             Name_textBox.Name = "Name_textBox";
             Name_textBox.Size = new Size(395, 27);
-            Name_textBox.TabIndex = 36;
+            Name_textBox.TabIndex = 35;
             // 
-            // StaffID_textBox
+            // UserID_textBox
             // 
-            StaffID_textBox.Location = new Point(87, 20);
-            StaffID_textBox.Name = "StaffID_textBox";
-            StaffID_textBox.Size = new Size(204, 27);
-            StaffID_textBox.TabIndex = 35;
-            // 
-            // Address_label
-            // 
-            Address_label.AutoSize = true;
-            Address_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Address_label.Location = new Point(314, 69);
-            Address_label.Name = "Address_label";
-            Address_label.Size = new Size(72, 17);
-            Address_label.TabIndex = 34;
-            Address_label.Text = "Address :";
+            UserID_textBox.Location = new Point(120, 20);
+            UserID_textBox.Name = "UserID_textBox";
+            UserID_textBox.Size = new Size(164, 27);
+            UserID_textBox.TabIndex = 34;
             // 
             // Name_label
             // 
@@ -132,92 +130,50 @@
             Name_label.TabIndex = 33;
             Name_label.Text = "Name :";
             // 
-            // StaffID_label
+            // UserID_label
             // 
-            StaffID_label.AutoSize = true;
-            StaffID_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            StaffID_label.Location = new Point(10, 25);
-            StaffID_label.Name = "StaffID_label";
-            StaffID_label.Size = new Size(66, 17);
-            StaffID_label.TabIndex = 32;
-            StaffID_label.Text = "Staff ID :";
+            UserID_label.AutoSize = true;
+            UserID_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            UserID_label.Location = new Point(41, 83);
+            UserID_label.Name = "UserID_label";
+            UserID_label.Size = new Size(70, 17);
+            UserID_label.TabIndex = 32;
+            UserID_label.Text = "User ID :";
             // 
-            // UserIDlabel
-            // 
-            UserIDlabel.AutoSize = true;
-            UserIDlabel.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            UserIDlabel.Location = new Point(10, 69);
-            UserIDlabel.Name = "UserIDlabel";
-            UserIDlabel.Size = new Size(70, 17);
-            UserIDlabel.TabIndex = 42;
-            UserIDlabel.Text = "User ID :";
-            // 
-            // UserIDcomboBox
-            // 
-            UserIDcomboBox.FormattingEnabled = true;
-            UserIDcomboBox.Location = new Point(86, 63);
-            UserIDcomboBox.Name = "UserIDcomboBox";
-            UserIDcomboBox.Size = new Size(204, 28);
-            UserIDcomboBox.TabIndex = 43;
-            // 
-            // PhoneNo_textBox
-            // 
-            PhoneNo_textBox.Location = new Point(395, 111);
-            PhoneNo_textBox.Name = "PhoneNo_textBox";
-            PhoneNo_textBox.Size = new Size(168, 27);
-            PhoneNo_textBox.TabIndex = 45;
-            // 
-            // PhoneNo_label
-            // 
-            PhoneNo_label.AutoSize = true;
-            PhoneNo_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            PhoneNo_label.Location = new Point(305, 116);
-            PhoneNo_label.Name = "PhoneNo_label";
-            PhoneNo_label.Size = new Size(81, 17);
-            PhoneNo_label.TabIndex = 44;
-            PhoneNo_label.Text = "Phone No :";
-            // 
-            // StaffForm
+            // AdminForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(PhoneNo_textBox);
-            Controls.Add(PhoneNo_label);
-            Controls.Add(UserIDcomboBox);
-            Controls.Add(UserIDlabel);
+            Controls.Add(UserID_comboBox);
+            Controls.Add(AdminID_label);
             Controls.Add(dataGridView1);
             Controls.Add(Delete_button);
             Controls.Add(Update_button);
             Controls.Add(Add_button);
-            Controls.Add(Address_textBox);
             Controls.Add(Name_textBox);
-            Controls.Add(StaffID_textBox);
-            Controls.Add(Address_label);
+            Controls.Add(UserID_textBox);
             Controls.Add(Name_label);
-            Controls.Add(StaffID_label);
+            Controls.Add(UserID_label);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "StaffForm";
-            Text = "Staff";
+            Name = "AdminForm";
+            Text = "Admin";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
+
+        private ComboBox UserID_comboBox;
+        private Label AdminID_label;
         private DataGridView dataGridView1;
         private Button Delete_button;
         private Button Update_button;
         private Button Add_button;
-        private TextBox Address_textBox;
         private TextBox Name_textBox;
-        private TextBox StaffID_textBox;
-        private Label Address_label;
+        private TextBox UserID_textBox;
         private Label Name_label;
-        private Label StaffID_label;
-        private Label UserIDlabel;
-        private ComboBox UserIDcomboBox;
-        private TextBox PhoneNo_textBox;
-        private Label PhoneNo_label;
+        private Label UserID_label;
     }
 }

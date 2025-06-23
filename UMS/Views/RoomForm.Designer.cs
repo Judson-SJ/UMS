@@ -108,10 +108,12 @@
             // 
             RoomType_comboBox.AutoCompleteCustomSource.AddRange(new string[] { "Fundamental Of Computing" });
             RoomType_comboBox.FormattingEnabled = true;
+            RoomType_comboBox.Items.AddRange(new object[] { "Hall", "Lab" });
             RoomType_comboBox.Location = new Point(634, 12);
             RoomType_comboBox.Name = "RoomType_comboBox";
             RoomType_comboBox.Size = new Size(140, 28);
             RoomType_comboBox.TabIndex = 15;
+            RoomType_comboBox.SelectedIndexChanged += RoomType_comboBox_SelectedIndexChanged;
             // 
             // RoomType_label
             // 

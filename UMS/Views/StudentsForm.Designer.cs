@@ -40,6 +40,10 @@
             dataGridView1 = new DataGridView();
             Course_comboBox = new ComboBox();
             Course_label = new Label();
+            PhoneNo_textBox = new TextBox();
+            PhoneNo_label = new Label();
+            UserIDcomboBox = new ComboBox();
+            UserIDlabel = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -75,7 +79,7 @@
             // 
             // StudentID_textBox
             // 
-            StudentID_textBox.Location = new Point(125, 21);
+            StudentID_textBox.Location = new Point(109, 21);
             StudentID_textBox.Name = "StudentID_textBox";
             StudentID_textBox.Size = new Size(204, 27);
             StudentID_textBox.TabIndex = 3;
@@ -144,26 +148,65 @@
             // 
             Course_comboBox.AutoCompleteCustomSource.AddRange(new string[] { "Fundamental Of Computing" });
             Course_comboBox.FormattingEnabled = true;
-            Course_comboBox.Location = new Point(125, 70);
+            Course_comboBox.Location = new Point(109, 122);
             Course_comboBox.Name = "Course_comboBox";
-            Course_comboBox.Size = new Size(176, 28);
+            Course_comboBox.Size = new Size(204, 28);
             Course_comboBox.TabIndex = 11;
             // 
             // Course_label
             // 
             Course_label.AutoSize = true;
             Course_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Course_label.Location = new Point(45, 75);
+            Course_label.Location = new Point(45, 127);
             Course_label.Name = "Course_label";
             Course_label.Size = new Size(65, 17);
             Course_label.TabIndex = 10;
             Course_label.Text = "Course :";
+            // 
+            // PhoneNo_textBox
+            // 
+            PhoneNo_textBox.Location = new Point(401, 123);
+            PhoneNo_textBox.Name = "PhoneNo_textBox";
+            PhoneNo_textBox.Size = new Size(168, 27);
+            PhoneNo_textBox.TabIndex = 49;
+            // 
+            // PhoneNo_label
+            // 
+            PhoneNo_label.AutoSize = true;
+            PhoneNo_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            PhoneNo_label.Location = new Point(314, 127);
+            PhoneNo_label.Name = "PhoneNo_label";
+            PhoneNo_label.Size = new Size(81, 17);
+            PhoneNo_label.TabIndex = 48;
+            PhoneNo_label.Text = "Phone No :";
+            // 
+            // UserIDcomboBox
+            // 
+            UserIDcomboBox.FormattingEnabled = true;
+            UserIDcomboBox.Location = new Point(109, 69);
+            UserIDcomboBox.Name = "UserIDcomboBox";
+            UserIDcomboBox.Size = new Size(204, 28);
+            UserIDcomboBox.TabIndex = 47;
+            // 
+            // UserIDlabel
+            // 
+            UserIDlabel.AutoSize = true;
+            UserIDlabel.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            UserIDlabel.Location = new Point(40, 74);
+            UserIDlabel.Name = "UserIDlabel";
+            UserIDlabel.Size = new Size(70, 17);
+            UserIDlabel.TabIndex = 46;
+            UserIDlabel.Text = "User ID :";
             // 
             // StudentsForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(PhoneNo_textBox);
+            Controls.Add(PhoneNo_label);
+            Controls.Add(UserIDcomboBox);
+            Controls.Add(UserIDlabel);
             Controls.Add(Course_comboBox);
             Controls.Add(Course_label);
             Controls.Add(dataGridView1);
@@ -198,5 +241,9 @@
         private DataGridView dataGridView1;
         private ComboBox Course_comboBox;
         private Label Course_label;
+        private TextBox PhoneNo_textBox;
+        private Label PhoneNo_label;
+        private ComboBox UserIDcomboBox;
+        private Label UserIDlabel;
     }
 }

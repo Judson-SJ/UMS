@@ -13,5 +13,6 @@ namespace UMS.Models
         public string StudentName { get; set; }
         public string StudentAddress { get; set; }
         public string Course { get; set; }
+        public string PhoneNo { get; set; }
     }
 }

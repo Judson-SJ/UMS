@@ -21,5 +21,10 @@ namespace UMS.Views
         {
 
         }
+
+        private void PhoneNo_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

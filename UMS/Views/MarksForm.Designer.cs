@@ -34,14 +34,14 @@
             Add_button = new Button();
             MarksID_textBox = new TextBox();
             MarksID_label = new Label();
-            ExamID_textBox = new TextBox();
             ExamID_label = new Label();
             Score_label = new Label();
-            StudentID_textBox = new TextBox();
             StudentID_label = new Label();
             Score_textBox = new TextBox();
-            Grade_textBox = new TextBox();
             Grade_label = new Label();
+            ExamID_comboBox = new ComboBox();
+            Grade_comboBox = new ComboBox();
+            StudentID_comboBox = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -108,13 +108,6 @@
             MarksID_label.TabIndex = 35;
             MarksID_label.Text = "Marks ID :";
             // 
-            // ExamID_textBox
-            // 
-            ExamID_textBox.Location = new Point(328, 19);
-            ExamID_textBox.Name = "ExamID_textBox";
-            ExamID_textBox.Size = new Size(110, 27);
-            ExamID_textBox.TabIndex = 33;
-            // 
             // ExamID_label
             // 
             ExamID_label.AutoSize = true;
@@ -135,13 +128,6 @@
             Score_label.TabIndex = 31;
             Score_label.Text = "Score :";
             // 
-            // StudentID_textBox
-            // 
-            StudentID_textBox.Location = new Point(563, 19);
-            StudentID_textBox.Name = "StudentID_textBox";
-            StudentID_textBox.Size = new Size(204, 27);
-            StudentID_textBox.TabIndex = 42;
-            // 
             // StudentID_label
             // 
             StudentID_label.AutoSize = true;
@@ -159,13 +145,6 @@
             Score_textBox.Size = new Size(110, 27);
             Score_textBox.TabIndex = 34;
             // 
-            // Grade_textBox
-            // 
-            Grade_textBox.Location = new Point(328, 67);
-            Grade_textBox.Name = "Grade_textBox";
-            Grade_textBox.Size = new Size(110, 27);
-            Grade_textBox.TabIndex = 44;
-            // 
             // Grade_label
             // 
             Grade_label.AutoSize = true;
@@ -176,14 +155,40 @@
             Grade_label.TabIndex = 43;
             Grade_label.Text = "Grade :";
             // 
+            // ExamID_comboBox
+            // 
+            ExamID_comboBox.FormattingEnabled = true;
+            ExamID_comboBox.Location = new Point(321, 19);
+            ExamID_comboBox.Name = "ExamID_comboBox";
+            ExamID_comboBox.Size = new Size(117, 28);
+            ExamID_comboBox.TabIndex = 45;
+            // 
+            // Grade_comboBox
+            // 
+            Grade_comboBox.FormattingEnabled = true;
+            Grade_comboBox.Items.AddRange(new object[] { "A", "B", "C", "S", "F" });
+            Grade_comboBox.Location = new Point(321, 67);
+            Grade_comboBox.Name = "Grade_comboBox";
+            Grade_comboBox.Size = new Size(117, 28);
+            Grade_comboBox.TabIndex = 46;
+            // 
+            // StudentID_comboBox
+            // 
+            StudentID_comboBox.FormattingEnabled = true;
+            StudentID_comboBox.Location = new Point(551, 19);
+            StudentID_comboBox.Name = "StudentID_comboBox";
+            StudentID_comboBox.Size = new Size(117, 28);
+            StudentID_comboBox.TabIndex = 47;
+            // 
             // MarksForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(Grade_textBox);
+            Controls.Add(StudentID_comboBox);
+            Controls.Add(Grade_comboBox);
+            Controls.Add(ExamID_comboBox);
             Controls.Add(Grade_label);
-            Controls.Add(StudentID_textBox);
             Controls.Add(StudentID_label);
             Controls.Add(dataGridView1);
             Controls.Add(Delete_button);
@@ -192,7 +197,6 @@
             Controls.Add(MarksID_textBox);
             Controls.Add(MarksID_label);
             Controls.Add(Score_textBox);
-            Controls.Add(ExamID_textBox);
             Controls.Add(ExamID_label);
             Controls.Add(Score_label);
             FormBorderStyle = FormBorderStyle.None;
@@ -212,13 +216,13 @@
         private Button Add_button;
         private TextBox MarksID_textBox;
         private Label MarksID_label;
-        private TextBox ExamID_textBox;
         private Label ExamID_label;
         private Label Score_label;
-        private TextBox StudentID_textBox;
         private Label StudentID_label;
         private TextBox Score_textBox;
-        private TextBox Grade_textBox;
         private Label Grade_label;
+        private ComboBox ExamID_comboBox;
+        private ComboBox Grade_comboBox;
+        private ComboBox StudentID_comboBox;
     }
 }

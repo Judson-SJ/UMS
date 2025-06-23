@@ -93,6 +93,10 @@ namespace UMS.Views
             Application.Exit();
         }
 
-        
+        private void Admin_button_Click(object sender, EventArgs e)
+        {
+            LoadForm(new AdminForm());
+
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace UMS.Models
         public int SubjectID { get; set; }
         public int RoomID { get; set; }
         public string TimeSlot { get; set; }
+        public string LectureID { get; set; }
 
     }
 }

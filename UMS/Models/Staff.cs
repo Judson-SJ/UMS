@@ -12,6 +12,6 @@ namespace UMS.Models
         public int UserID { get; set; }
         public string StaffName { get; set; }
         public string StaffAddress { get; set; }
-        public string Role { get; set; }
+        public string PhoneNo { get; set; }
     }
 }
