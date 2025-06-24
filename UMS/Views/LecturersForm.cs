@@ -25,7 +25,7 @@ namespace UMS.Views
             Delete_button.Click += Delete_button_Click;
             Lecturers_dataGridView.CellClick += Lecturers_dataGridView_CellClick;
 
-            // Dummy user IDs for now (replace with dynamic loading)
+            
             UserIDcomboBox.Items.Add("1");
             UserIDcomboBox.Items.Add("2");
         }
@@ -129,7 +129,7 @@ namespace UMS.Views
                 StudentName_textBox.Text = row.Cells["Name"].Value.ToString();
                 Address_textBox.Text = row.Cells["Address"].Value.ToString();
                 PhoneNo_textBox.Text = row.Cells["PhoneNo"].Value.ToString();
-                // You can set user ID if needed
+                
             }
         }
     }

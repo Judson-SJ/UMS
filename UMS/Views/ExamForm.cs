@@ -25,7 +25,7 @@ namespace UMS.Views
             Delete_button.Click += Delete_button_Click;
             Exams_dataGridView.CellClick += Exams_dataGridView_CellClick;
 
-            // TODO: Replace this with dynamic subject loading
+            
             SubjectID_comboBox.Items.Add("1");
             SubjectID_comboBox.Items.Add("2");
             SubjectID_comboBox.Items.Add("3");

@@ -25,9 +25,11 @@ namespace UMS.Views
             Delete_button.Click += Delete_button_Click;
             Students_dataGridView.CellClick += Students_dataGridView_CellClick;
 
-            Course_comboBox.Items.Add("1"); // Sample Course IDs
-            Course_comboBox.Items.Add("2");
-            UserIDcomboBox.Items.Add("1"); // Sample User IDs
+            Course_comboBox.Items.Add("Software Engineering");
+            Course_comboBox.Items.Add("Computer Science");
+            Course_comboBox.Items.Add("Business IT");
+
+            UserIDcomboBox.Items.Add("1"); 
             UserIDcomboBox.Items.Add("2");
         }
 
@@ -51,16 +53,17 @@ namespace UMS.Views
             try
             {
                 string name = StudentName_textBox.Text;
-                if (int.TryParse(Course_comboBox.Text, out int courseId))
+                string course = Course_comboBox.Text;
+                if (!string.IsNullOrWhiteSpace(course))
                 {
-                    _controller.AddStudent(name, courseId);
+                    _controller.AddStudent(name, course);
                     MessageBox.Show("Student added.");
                     LoadStudents();
                     ClearFields();
                 }
                 else
                 {
-                    MessageBox.Show("Select a valid course ID.");
+                    MessageBox.Show("Select a valid course.");
                 }
             }
             catch (Exception ex)
@@ -73,18 +76,18 @@ namespace UMS.Views
         {
             try
             {
-                if (int.TryParse(StudentID_textBox.Text, out int studentId) &&
-                    int.TryParse(Course_comboBox.Text, out int courseId))
+                if (int.TryParse(StudentID_textBox.Text, out int studentId))
                 {
                     string name = StudentName_textBox.Text;
-                    _controller.UpdateStudent(studentId, name, courseId);
+                    string course = Course_comboBox.Text;
+                    _controller.UpdateStudent(studentId, name, course);
                     MessageBox.Show("Student updated.");
                     LoadStudents();
                     ClearFields();
                 }
                 else
                 {
-                    MessageBox.Show("Select a valid student and course.");
+                    MessageBox.Show("Select a valid student.");
                 }
             }
             catch (Exception ex)
@@ -122,7 +125,7 @@ namespace UMS.Views
                 var row = Students_dataGridView.Rows[e.RowIndex];
                 StudentID_textBox.Text = row.Cells["StudentID"].Value.ToString();
                 StudentName_textBox.Text = row.Cells["Name"].Value.ToString();
-                Course_comboBox.Text = row.Cells["CourseName"].Value.ToString();
+                Course_comboBox.Text = row.Cells["Course"].Value.ToString();
             }
         }
     }

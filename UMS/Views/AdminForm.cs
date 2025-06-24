@@ -44,7 +44,7 @@ namespace UMS.Views
                 if (int.TryParse(UserID_textBox.Text, out int userId))
                 {
                     var name = Name_textBox.Text;
-                    int newAdminId = new Random().Next(1000, 9999); // You may replace this with actual DB-generated ID
+                    int newAdminId = new Random().Next(1000, 9999); 
                     _controller.AddAdmin(newAdminId, userId, name);
                     MessageBox.Show("Admin added successfully.");
                     LoadAdmins();

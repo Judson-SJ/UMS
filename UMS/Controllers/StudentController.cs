@@ -8,14 +8,14 @@ namespace UMS.Controllers
         private readonly string _connectionString;
         public StudentController(string connectionString) => _connectionString = connectionString;
 
-        public void AddStudent(string name, int courseId)
+        public void AddStudent(string name, string course)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("INSERT INTO Students (Name, CourseID) VALUES (@name, @courseId)", conn);
+                var cmd = new SQLiteCommand("INSERT INTO Students (Name, Course) VALUES (@name, @course)", conn);
                 cmd.Parameters.AddWithValue("@name", name);
-                cmd.Parameters.AddWithValue("@courseId", courseId);
+                cmd.Parameters.AddWithValue("@course", course);
                 cmd.ExecuteNonQuery();
             }
         }
@@ -25,7 +25,7 @@ namespace UMS.Controllers
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("SELECT s.StudentID, s.Name, c.CourseName FROM Students s INNER JOIN Courses c ON s.CourseID = c.CourseID", conn);
+                var cmd = new SQLiteCommand("SELECT StudentID, Name, Course FROM Students", conn);
                 var adapter = new SQLiteDataAdapter(cmd);
                 var dt = new DataTable();
                 adapter.Fill(dt);
@@ -33,14 +33,14 @@ namespace UMS.Controllers
             }
         }
 
-        public void UpdateStudent(int studentId, string name, int courseId)
+        public void UpdateStudent(int studentId, string name, string course)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("UPDATE Students SET Name = @name, CourseID = @courseId WHERE StudentID = @studentId", conn);
+                var cmd = new SQLiteCommand("UPDATE Students SET Name = @name, Course = @course WHERE StudentID = @studentId", conn);
                 cmd.Parameters.AddWithValue("@name", name);
-                cmd.Parameters.AddWithValue("@courseId", courseId);
+                cmd.Parameters.AddWithValue("@course", course);
                 cmd.Parameters.AddWithValue("@studentId", studentId);
                 cmd.ExecuteNonQuery();
             }

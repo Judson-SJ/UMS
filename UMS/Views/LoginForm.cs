@@ -35,7 +35,7 @@ namespace UMS
                     string role = user["Role"].ToString();
                     MessageBox.Show($"Login successful. Role: {role}");
 
-                    // Redirect to main form
+                    
                     this.Hide();
                     var mainForm = new MainForm();
                     mainForm.FormClosed += (s, args) => this.Close();
