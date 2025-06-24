@@ -37,14 +37,14 @@
             Add_button = new Button();
             Update_button = new Button();
             Delete_button = new Button();
-            dataGridView1 = new DataGridView();
+            Students_dataGridView = new DataGridView();
             Course_comboBox = new ComboBox();
             Course_label = new Label();
             PhoneNo_textBox = new TextBox();
             PhoneNo_label = new Label();
             UserIDcomboBox = new ComboBox();
             UserIDlabel = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Students_dataGridView).BeginInit();
             SuspendLayout();
             // 
             // StudentID_label
@@ -134,15 +134,15 @@
             Delete_button.Text = "Delete";
             Delete_button.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // Students_dataGridView
             // 
-            dataGridView1.BackgroundColor = SystemColors.ControlLight;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 226);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(776, 212);
-            dataGridView1.TabIndex = 9;
+            Students_dataGridView.BackgroundColor = SystemColors.ControlLight;
+            Students_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Students_dataGridView.Location = new Point(12, 226);
+            Students_dataGridView.Name = "Students_dataGridView";
+            Students_dataGridView.RowHeadersWidth = 51;
+            Students_dataGridView.Size = new Size(776, 212);
+            Students_dataGridView.TabIndex = 9;
             // 
             // Course_comboBox
             // 
@@ -209,7 +209,7 @@
             Controls.Add(UserIDlabel);
             Controls.Add(Course_comboBox);
             Controls.Add(Course_label);
-            Controls.Add(dataGridView1);
+            Controls.Add(Students_dataGridView);
             Controls.Add(Delete_button);
             Controls.Add(Update_button);
             Controls.Add(Add_button);
@@ -222,7 +222,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "StudentsForm";
             Text = "Students";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Students_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -238,7 +238,7 @@
         private Button Add_button;
         private Button Update_button;
         private Button Delete_button;
-        private DataGridView dataGridView1;
+        private DataGridView Students_dataGridView;
         private ComboBox Course_comboBox;
         private Label Course_label;
         private TextBox PhoneNo_textBox;

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            Marks_dataGridView = new DataGridView();
             Delete_button = new Button();
             Update_button = new Button();
             Add_button = new Button();
@@ -42,18 +42,18 @@
             ExamID_comboBox = new ComboBox();
             Grade_comboBox = new ComboBox();
             StudentID_comboBox = new ComboBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Marks_dataGridView).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // Marks_dataGridView
             // 
-            dataGridView1.BackgroundColor = SystemColors.ControlLight;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(14, 221);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(776, 212);
-            dataGridView1.TabIndex = 40;
+            Marks_dataGridView.BackgroundColor = SystemColors.ControlLight;
+            Marks_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Marks_dataGridView.Location = new Point(14, 221);
+            Marks_dataGridView.Name = "Marks_dataGridView";
+            Marks_dataGridView.RowHeadersWidth = 51;
+            Marks_dataGridView.Size = new Size(776, 212);
+            Marks_dataGridView.TabIndex = 40;
             // 
             // Delete_button
             // 
@@ -190,7 +190,7 @@
             Controls.Add(ExamID_comboBox);
             Controls.Add(Grade_label);
             Controls.Add(StudentID_label);
-            Controls.Add(dataGridView1);
+            Controls.Add(Marks_dataGridView);
             Controls.Add(Delete_button);
             Controls.Add(Update_button);
             Controls.Add(Add_button);
@@ -203,14 +203,14 @@
             Name = "MarksForm";
             Text = "Marks";
             Load += MarksForm_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Marks_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView Marks_dataGridView;
         private Button Delete_button;
         private Button Update_button;
         private Button Add_button;

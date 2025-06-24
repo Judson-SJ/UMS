@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView2 = new DataGridView();
+            Rooms_dataGridView = new DataGridView();
             Delete_button = new Button();
             button1 = new Button();
             Update_button = new Button();
@@ -38,18 +38,18 @@
             RoomType_label = new Label();
             RoomName_label = new Label();
             RoomName_textBox = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Rooms_dataGridView).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView2
+            // Rooms_dataGridView
             // 
-            dataGridView2.BackgroundColor = SystemColors.ControlLight;
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(12, 172);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(776, 268);
-            dataGridView2.TabIndex = 21;
+            Rooms_dataGridView.BackgroundColor = SystemColors.ControlLight;
+            Rooms_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Rooms_dataGridView.Location = new Point(12, 172);
+            Rooms_dataGridView.Name = "Rooms_dataGridView";
+            Rooms_dataGridView.RowHeadersWidth = 51;
+            Rooms_dataGridView.Size = new Size(776, 268);
+            Rooms_dataGridView.TabIndex = 21;
             // 
             // Delete_button
             // 
@@ -149,7 +149,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(RoomName_textBox);
             Controls.Add(RoomName_label);
-            Controls.Add(dataGridView2);
+            Controls.Add(Rooms_dataGridView);
             Controls.Add(Delete_button);
             Controls.Add(button1);
             Controls.Add(Update_button);
@@ -160,14 +160,14 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "RoomForm";
             Text = "Room";
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Rooms_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView2;
+        private DataGridView Rooms_dataGridView;
         private Button Delete_button;
         private Button button1;
         private Button Update_button;

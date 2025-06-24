@@ -33,14 +33,14 @@
             Subject_textBox = new TextBox();
             Subject_label = new Label();
             Lecture_label = new Label();
-            dataGridView2 = new DataGridView();
+            Subjects_dataGridView = new DataGridView();
             Delete_button = new Button();
             button1 = new Button();
             Update_button = new Button();
             Course_label = new Label();
             Course_comboBox = new ComboBox();
             Lecture_comboBox = new ComboBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Subjects_dataGridView).BeginInit();
             SuspendLayout();
             // 
             // Subject_ID_textBox
@@ -88,15 +88,15 @@
             Lecture_label.TabIndex = 26;
             Lecture_label.Text = "Lecture :";
             // 
-            // dataGridView2
+            // Subjects_dataGridView
             // 
-            dataGridView2.BackgroundColor = SystemColors.ControlLight;
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(72, 229);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(643, 192);
-            dataGridView2.TabIndex = 35;
+            Subjects_dataGridView.BackgroundColor = SystemColors.ControlLight;
+            Subjects_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Subjects_dataGridView.Location = new Point(72, 229);
+            Subjects_dataGridView.Name = "Subjects_dataGridView";
+            Subjects_dataGridView.RowHeadersWidth = 51;
+            Subjects_dataGridView.Size = new Size(643, 192);
+            Subjects_dataGridView.TabIndex = 35;
             // 
             // Delete_button
             // 
@@ -170,7 +170,7 @@
             Controls.Add(Lecture_comboBox);
             Controls.Add(Course_comboBox);
             Controls.Add(Course_label);
-            Controls.Add(dataGridView2);
+            Controls.Add(Subjects_dataGridView);
             Controls.Add(Delete_button);
             Controls.Add(button1);
             Controls.Add(Update_button);
@@ -183,7 +183,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "SubjectsForm";
             Text = "SubjectsForm";
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Subjects_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -195,7 +195,7 @@
         private TextBox Subject_textBox;
         private Label Subject_label;
         private Label Lecture_label;
-        private DataGridView dataGridView2;
+        private DataGridView Subjects_dataGridView;
         private Button Delete_button;
         private Button button1;
         private Button Update_button;

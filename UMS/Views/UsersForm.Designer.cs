@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            Users_dataGridView = new DataGridView();
             Delete_button = new Button();
             Update_button = new Button();
             Add_button = new Button();
@@ -40,18 +40,18 @@
             Role_label = new Label();
             Password_textBox = new TextBox();
             Password_label = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Users_dataGridView).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // Users_dataGridView
             // 
-            dataGridView1.BackgroundColor = SystemColors.ControlLight;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 214);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(776, 212);
-            dataGridView1.TabIndex = 19;
+            Users_dataGridView.BackgroundColor = SystemColors.ControlLight;
+            Users_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Users_dataGridView.Location = new Point(12, 214);
+            Users_dataGridView.Name = "Users_dataGridView";
+            Users_dataGridView.RowHeadersWidth = 51;
+            Users_dataGridView.Size = new Size(776, 212);
+            Users_dataGridView.TabIndex = 19;
             // 
             // Delete_button
             // 
@@ -168,7 +168,7 @@
             Controls.Add(Password_label);
             Controls.Add(Role_comboBox);
             Controls.Add(Role_label);
-            Controls.Add(dataGridView1);
+            Controls.Add(Users_dataGridView);
             Controls.Add(Delete_button);
             Controls.Add(Update_button);
             Controls.Add(Add_button);
@@ -179,14 +179,14 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "UsersForm";
             Text = "Users";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Users_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView Users_dataGridView;
         private Button Delete_button;
         private Button Update_button;
         private Button Add_button;

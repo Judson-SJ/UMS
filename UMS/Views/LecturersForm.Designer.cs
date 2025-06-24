@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            Lecturers_dataGridView = new DataGridView();
             Delete_button = new Button();
             Update_button = new Button();
             Add_button = new Button();
@@ -42,18 +42,18 @@
             PhoneNo_textBox = new TextBox();
             UserIDcomboBox = new ComboBox();
             UserIDlabel = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Lecturers_dataGridView).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // Lecturers_dataGridView
             // 
-            dataGridView1.BackgroundColor = SystemColors.ControlLight;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 249);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(776, 177);
-            dataGridView1.TabIndex = 19;
+            Lecturers_dataGridView.BackgroundColor = SystemColors.ControlLight;
+            Lecturers_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Lecturers_dataGridView.Location = new Point(12, 249);
+            Lecturers_dataGridView.Name = "Lecturers_dataGridView";
+            Lecturers_dataGridView.RowHeadersWidth = 51;
+            Lecturers_dataGridView.Size = new Size(776, 177);
+            Lecturers_dataGridView.TabIndex = 19;
             // 
             // Delete_button
             // 
@@ -188,7 +188,7 @@
             Controls.Add(UserIDlabel);
             Controls.Add(PhoneNo_textBox);
             Controls.Add(PhoneNo_label);
-            Controls.Add(dataGridView1);
+            Controls.Add(Lecturers_dataGridView);
             Controls.Add(Delete_button);
             Controls.Add(Update_button);
             Controls.Add(Add_button);
@@ -201,14 +201,14 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "LecturersForm";
             Text = "Lecturers";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Lecturers_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView Lecturers_dataGridView;
         private Button Delete_button;
         private Button Update_button;
         private Button Add_button;

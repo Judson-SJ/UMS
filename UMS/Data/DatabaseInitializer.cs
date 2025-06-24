@@ -31,7 +31,6 @@ namespace UMS.Data
                     CREATE TABLE IF NOT EXISTS Staff (
                         StaffId INTEGER PRIMARY KEY AUTOINCREMENT,
                         Name TEXT NOT NULL,
-                        Role TEXT NOT NULL,
                         Address TEXT NOT NULL,
                         PhoneNo TEXT NOT NULL,
                         FOREIGN KEY (UserId) REFERENCES Users(UserId)
@@ -85,7 +84,8 @@ namespace UMS.Data
                         TimeTableID INTEGER,PRIMARY KEY AUTOINCREMENT,
                         TimeSlot TEXT NOT NULL,
                         FOREIGN KEY (SubjectId) REFERENCES Subjects(SubjectId),
-                        FOREIGN KEY (RoomId) REFERENCES Rooms(RoomId)
+                        FOREIGN KEY (RoomId) REFERENCES Rooms(RoomId),
+                        FOFEIGN KEY (LectureId) REFERENCE Lecturers(LectureId)
                     );
 ";
 

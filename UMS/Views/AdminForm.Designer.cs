@@ -30,7 +30,7 @@
         {
             UserID_comboBox = new ComboBox();
             AdminID_label = new Label();
-            dataGridView1 = new DataGridView();
+            Admins_dataGridView = new DataGridView();
             Delete_button = new Button();
             Update_button = new Button();
             Add_button = new Button();
@@ -38,7 +38,7 @@
             UserID_textBox = new TextBox();
             Name_label = new Label();
             UserID_label = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Admins_dataGridView).BeginInit();
             SuspendLayout();
             // 
             // UserID_comboBox
@@ -60,15 +60,15 @@
             AdminID_label.TabIndex = 40;
             AdminID_label.Text = "Admin ID :";
             // 
-            // dataGridView1
+            // Admins_dataGridView
             // 
-            dataGridView1.BackgroundColor = SystemColors.ControlLight;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(14, 200);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(776, 230);
-            dataGridView1.TabIndex = 39;
+            Admins_dataGridView.BackgroundColor = SystemColors.ControlLight;
+            Admins_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Admins_dataGridView.Location = new Point(14, 200);
+            Admins_dataGridView.Name = "Admins_dataGridView";
+            Admins_dataGridView.RowHeadersWidth = 51;
+            Admins_dataGridView.Size = new Size(776, 230);
+            Admins_dataGridView.TabIndex = 39;
             // 
             // Delete_button
             // 
@@ -147,7 +147,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(UserID_comboBox);
             Controls.Add(AdminID_label);
-            Controls.Add(dataGridView1);
+            Controls.Add(Admins_dataGridView);
             Controls.Add(Delete_button);
             Controls.Add(Update_button);
             Controls.Add(Add_button);
@@ -158,7 +158,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "AdminForm";
             Text = "Admin";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Admins_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,7 +167,7 @@
 
         private ComboBox UserID_comboBox;
         private Label AdminID_label;
-        private DataGridView dataGridView1;
+        private DataGridView Admins_dataGridView;
         private Button Delete_button;
         private Button Update_button;
         private Button Add_button;

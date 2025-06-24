@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            Staff_dataGridView = new DataGridView();
             Delete_button = new Button();
             Update_button = new Button();
             Add_button = new Button();
@@ -42,18 +42,18 @@
             UserIDcomboBox = new ComboBox();
             PhoneNo_textBox = new TextBox();
             PhoneNo_label = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Staff_dataGridView).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // Staff_dataGridView
             // 
-            dataGridView1.BackgroundColor = SystemColors.ControlLight;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(14, 218);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(776, 212);
-            dataGridView1.TabIndex = 41;
+            Staff_dataGridView.BackgroundColor = SystemColors.ControlLight;
+            Staff_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Staff_dataGridView.Location = new Point(14, 218);
+            Staff_dataGridView.Name = "Staff_dataGridView";
+            Staff_dataGridView.RowHeadersWidth = 51;
+            Staff_dataGridView.Size = new Size(776, 212);
+            Staff_dataGridView.TabIndex = 41;
             // 
             // Delete_button
             // 
@@ -186,7 +186,7 @@
             Controls.Add(PhoneNo_label);
             Controls.Add(UserIDcomboBox);
             Controls.Add(UserIDlabel);
-            Controls.Add(dataGridView1);
+            Controls.Add(Staff_dataGridView);
             Controls.Add(Delete_button);
             Controls.Add(Update_button);
             Controls.Add(Add_button);
@@ -199,13 +199,13 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "StaffForm";
             Text = "Staff";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Staff_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private DataGridView dataGridView1;
+        private DataGridView Staff_dataGridView;
         private Button Delete_button;
         private Button Update_button;
         private Button Add_button;

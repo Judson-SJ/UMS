@@ -26,5 +26,10 @@ namespace UMS.Views
         {
 
         }
+
+        private void SubjectID_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

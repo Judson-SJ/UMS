@@ -30,7 +30,7 @@
         {
             ExamName_textBox = new TextBox();
             SubjectID_label = new Label();
-            dataGridView1 = new DataGridView();
+            Exams_dataGridView = new DataGridView();
             Delete_button = new Button();
             Update_button = new Button();
             Add_button = new Button();
@@ -38,7 +38,7 @@
             ExamName_label = new Label();
             ExamID_label = new Label();
             SubjectID_comboBox = new ComboBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Exams_dataGridView).BeginInit();
             SuspendLayout();
             // 
             // ExamName_textBox
@@ -58,15 +58,15 @@
             SubjectID_label.TabIndex = 56;
             SubjectID_label.Text = "Subject ID :";
             // 
-            // dataGridView1
+            // Exams_dataGridView
             // 
-            dataGridView1.BackgroundColor = SystemColors.ControlLight;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 220);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(776, 212);
-            dataGridView1.TabIndex = 55;
+            Exams_dataGridView.BackgroundColor = SystemColors.ControlLight;
+            Exams_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Exams_dataGridView.Location = new Point(12, 220);
+            Exams_dataGridView.Name = "Exams_dataGridView";
+            Exams_dataGridView.RowHeadersWidth = 51;
+            Exams_dataGridView.Size = new Size(776, 212);
+            Exams_dataGridView.TabIndex = 55;
             // 
             // Delete_button
             // 
@@ -148,7 +148,7 @@
             Controls.Add(SubjectID_comboBox);
             Controls.Add(ExamName_textBox);
             Controls.Add(SubjectID_label);
-            Controls.Add(dataGridView1);
+            Controls.Add(Exams_dataGridView);
             Controls.Add(Delete_button);
             Controls.Add(Update_button);
             Controls.Add(Add_button);
@@ -158,7 +158,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "ExamForm";
             Text = "Exam";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Exams_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -166,7 +166,7 @@
         #endregion
         private TextBox ExamName_textBox;
         private Label SubjectID_label;
-        private DataGridView dataGridView1;
+        private DataGridView Exams_dataGridView;
         private Button Delete_button;
         private Button Update_button;
         private Button Add_button;
