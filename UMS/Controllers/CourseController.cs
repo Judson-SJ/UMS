@@ -5,6 +5,7 @@ using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UMS.Models;
 
 namespace UMS.Controllers
 {
@@ -24,25 +25,25 @@ namespace UMS.Controllers
             }
         }
 
-        public void UpdateCourse(int id, string name)
+        public void UpdateCourse(int courseId, string name)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("UPDATE Courses SET CourseName = @name WHERE CourseID = @id", conn);
+                var cmd = new SQLiteCommand("UPDATE Courses SET CourseName = @name WHERE CourseID = @courseId", conn);
                 cmd.Parameters.AddWithValue("@name", name);
-                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@courseId", courseId);
                 cmd.ExecuteNonQuery();
             }
         }
 
-        public void DeleteCourse(int id)
+        public void DeleteCourse(int courseId)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("DELETE FROM Courses WHERE CourseID = @id", conn);
-                cmd.Parameters.AddWithValue("@id", id);
+                var cmd = new SQLiteCommand("DELETE FROM Courses WHERE CourseID = @courseId", conn);
+                cmd.Parameters.AddWithValue("@courseId", courseId);
                 cmd.ExecuteNonQuery();
             }
         }

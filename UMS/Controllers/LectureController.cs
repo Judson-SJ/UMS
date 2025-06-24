@@ -56,7 +56,7 @@ namespace UMS.Controllers
             }
         }
 
-        public void DeleteLecture(int staffId)
+        public void DeleteLecture(int lectureId)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {

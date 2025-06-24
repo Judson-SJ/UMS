@@ -49,7 +49,7 @@
             Subject_ID_textBox.Name = "Subject_ID_textBox";
             Subject_ID_textBox.Size = new Size(243, 27);
             Subject_ID_textBox.TabIndex = 31;
-            Subject_ID_textBox.TextChanged += Subject_ID_01_textBox_TextChanged;
+            //Subject_ID_textBox.TextChanged += Subject_ID_01_textBox_TextChanged;
             // 
             // Subject_ID_label
             // 

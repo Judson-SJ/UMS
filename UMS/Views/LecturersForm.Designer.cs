@@ -131,7 +131,7 @@
             Name_label.Size = new Size(55, 17);
             Name_label.TabIndex = 11;
             Name_label.Text = "Name :";
-            Name_label.Click += Name_label_Click;
+            //Name_label.Click += Name_label_Click;
             // 
             // LectureID_label
             // 
@@ -152,7 +152,7 @@
             PhoneNo_label.Size = new Size(81, 17);
             PhoneNo_label.TabIndex = 20;
             PhoneNo_label.Text = "Phone No :";
-            PhoneNo_label.Click += PhoneNo_label_Click;
+            //PhoneNo_label.Click += PhoneNo_label_Click;
             // 
             // PhoneNo_textBox
             // 

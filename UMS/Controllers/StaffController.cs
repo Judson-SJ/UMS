@@ -33,7 +33,7 @@ namespace UMS.Controllers
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("SELECT s.StaffID, s.Name, s.Address, s.PhoneNo FROM Staff s INNER JOIN Users u ON u.UserID = c.UserID", conn);
+                var cmd = new SQLiteCommand("SELECT s.StaffID, s.Name, s.Address, s.PhoneNo FROM Staff s INNER JOIN Users u ON u.UserID = s.UserID", conn);
                 var adapter = new SQLiteDataAdapter(cmd);
                 var dt = new DataTable();
                 adapter.Fill(dt);

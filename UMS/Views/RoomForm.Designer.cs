@@ -113,7 +113,7 @@
             RoomType_comboBox.Name = "RoomType_comboBox";
             RoomType_comboBox.Size = new Size(140, 28);
             RoomType_comboBox.TabIndex = 15;
-            RoomType_comboBox.SelectedIndexChanged += RoomType_comboBox_SelectedIndexChanged;
+            //RoomType_comboBox.SelectedIndexChanged += RoomType_comboBox_SelectedIndexChanged;
             // 
             // RoomType_label
             // 

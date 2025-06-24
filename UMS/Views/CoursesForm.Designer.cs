@@ -48,7 +48,7 @@
             Course_label.Size = new Size(65, 17);
             Course_label.TabIndex = 0;
             Course_label.Text = "Course :";
-            Course_label.Click += Course_label_Click;
+            //Course_label.Click += Course_label_Click;
             // 
             // CourseID_label
             // 
@@ -136,7 +136,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "CoursesForm";
             Text = "Courses";
-            Load += CoursesForm_Load;
+            //Load += CoursesForm_Load;
             ((System.ComponentModel.ISupportInitialize)Courses_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();

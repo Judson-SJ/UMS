@@ -41,12 +41,15 @@
             Delete_button = new Button();
             button1 = new Button();
             Update_button = new Button();
+            Date_label = new Label();
+            ID_label = new Label();
+            ID_textBox = new TextBox();
             ((System.ComponentModel.ISupportInitialize)TimeTable_dataGridView).BeginInit();
             SuspendLayout();
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(12, 12);
+            dateTimePicker1.Location = new Point(87, 12);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(156, 27);
             dateTimePicker1.TabIndex = 0;
@@ -60,23 +63,23 @@
             TimeTable_dataGridView.RowHeadersWidth = 51;
             TimeTable_dataGridView.Size = new Size(776, 212);
             TimeTable_dataGridView.TabIndex = 14;
-            TimeTable_dataGridView.CellContentClick += dataGridView2_CellContentClick;
+            //TimeTable_dataGridView.CellContentClick += dataGridView2_CellContentClick;
             // 
             // SubjectID_comboBox
             // 
             SubjectID_comboBox.FormattingEnabled = true;
-            SubjectID_comboBox.Location = new Point(544, 14);
+            SubjectID_comboBox.Location = new Point(619, 14);
             SubjectID_comboBox.Margin = new Padding(3, 4, 3, 4);
             SubjectID_comboBox.Name = "SubjectID_comboBox";
             SubjectID_comboBox.Size = new Size(162, 28);
             SubjectID_comboBox.TabIndex = 39;
-            SubjectID_comboBox.SelectedIndexChanged += SubjectID_comboBox_SelectedIndexChanged;
+            //SubjectID_comboBox.SelectedIndexChanged += SubjectID_comboBox_SelectedIndexChanged;
             // 
             // SubjectID_label
             // 
             SubjectID_label.AutoSize = true;
             SubjectID_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SubjectID_label.Location = new Point(453, 19);
+            SubjectID_label.Location = new Point(528, 19);
             SubjectID_label.Name = "SubjectID_label";
             SubjectID_label.Size = new Size(86, 17);
             SubjectID_label.TabIndex = 38;
@@ -86,7 +89,7 @@
             // 
             TimeSlot_comboBox.FormattingEnabled = true;
             TimeSlot_comboBox.Items.AddRange(new object[] { "9.00 am - 10.30 am", "10.30 am - 12.00 pm", "1.00 pm - 2.30 pm", "2.30 pm - 4.00 pm" });
-            TimeSlot_comboBox.Location = new Point(272, 13);
+            TimeSlot_comboBox.Location = new Point(347, 13);
             TimeSlot_comboBox.Margin = new Padding(3, 4, 3, 4);
             TimeSlot_comboBox.Name = "TimeSlot_comboBox";
             TimeSlot_comboBox.Size = new Size(162, 28);
@@ -96,7 +99,7 @@
             // 
             TimeSlot_label.AutoSize = true;
             TimeSlot_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            TimeSlot_label.Location = new Point(181, 18);
+            TimeSlot_label.Location = new Point(256, 18);
             TimeSlot_label.Name = "TimeSlot_label";
             TimeSlot_label.Size = new Size(80, 17);
             TimeSlot_label.TabIndex = 40;
@@ -105,7 +108,7 @@
             // RoomID_comboBox
             // 
             RoomID_comboBox.FormattingEnabled = true;
-            RoomID_comboBox.Location = new Point(272, 58);
+            RoomID_comboBox.Location = new Point(347, 58);
             RoomID_comboBox.Margin = new Padding(3, 4, 3, 4);
             RoomID_comboBox.Name = "RoomID_comboBox";
             RoomID_comboBox.Size = new Size(162, 28);
@@ -115,7 +118,7 @@
             // 
             RoomID_label.AutoSize = true;
             RoomID_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            RoomID_label.Location = new Point(184, 63);
+            RoomID_label.Location = new Point(259, 63);
             RoomID_label.Name = "RoomID_label";
             RoomID_label.Size = new Size(77, 17);
             RoomID_label.TabIndex = 42;
@@ -124,7 +127,7 @@
             // LectureID_comboBox
             // 
             LectureID_comboBox.FormattingEnabled = true;
-            LectureID_comboBox.Location = new Point(544, 58);
+            LectureID_comboBox.Location = new Point(619, 58);
             LectureID_comboBox.Margin = new Padding(3, 4, 3, 4);
             LectureID_comboBox.Name = "LectureID_comboBox";
             LectureID_comboBox.Size = new Size(162, 28);
@@ -134,7 +137,7 @@
             // 
             LectureID_label.AutoSize = true;
             LectureID_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LectureID_label.Location = new Point(449, 63);
+            LectureID_label.Location = new Point(524, 63);
             LectureID_label.Name = "LectureID_label";
             LectureID_label.Size = new Size(90, 17);
             LectureID_label.TabIndex = 44;
@@ -176,12 +179,42 @@
             Update_button.Text = "Update";
             Update_button.UseVisualStyleBackColor = false;
             // 
+            // Date_label
+            // 
+            Date_label.AutoSize = true;
+            Date_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Date_label.Location = new Point(33, 18);
+            Date_label.Name = "Date_label";
+            Date_label.Size = new Size(48, 17);
+            Date_label.TabIndex = 50;
+            Date_label.Text = "Date :";
+            // 
+            // ID_label
+            // 
+            ID_label.AutoSize = true;
+            ID_label.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ID_label.Location = new Point(47, 63);
+            ID_label.Name = "ID_label";
+            ID_label.Size = new Size(34, 17);
+            ID_label.TabIndex = 51;
+            ID_label.Text = "ID :";
+            // 
+            // ID_textBox
+            // 
+            ID_textBox.Location = new Point(87, 58);
+            ID_textBox.Name = "ID_textBox";
+            ID_textBox.Size = new Size(156, 27);
+            ID_textBox.TabIndex = 52;
+            // 
             // TimeTableForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(801, 452);
             ControlBox = false;
+            Controls.Add(ID_textBox);
+            Controls.Add(ID_label);
+            Controls.Add(Date_label);
             Controls.Add(Delete_button);
             Controls.Add(button1);
             Controls.Add(Update_button);
@@ -220,5 +253,8 @@
         private Button Delete_button;
         private Button button1;
         private Button Update_button;
+        private Label Date_label;
+        private Label ID_label;
+        private TextBox ID_textBox;
     }
 }

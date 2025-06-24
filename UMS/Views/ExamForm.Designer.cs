@@ -120,7 +120,7 @@
             ExamName_label.Size = new Size(96, 17);
             ExamName_label.TabIndex = 50;
             ExamName_label.Text = "Exam Name :";
-            ExamName_label.Click += ExamName_label_Click;
+            //ExamName_label.Click += ExamName_label_Click;
             // 
             // ExamID_label
             // 

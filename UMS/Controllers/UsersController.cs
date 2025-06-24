@@ -18,7 +18,7 @@ namespace UMS.Controllers
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("INSERT INTO Students (Name,Password,Role) VALUES (@name, @password, @role)", conn);
+                var cmd = new SQLiteCommand("INSERT INTO Users (Name,Password,Role) VALUES (@name, @password, @role)", conn);
                 cmd.Parameters.AddWithValue("@name", name);
                 cmd.Parameters.AddWithValue("@password", password);
                 cmd.Parameters.AddWithValue("@role", role);

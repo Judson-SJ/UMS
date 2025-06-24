@@ -202,7 +202,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "MarksForm";
             Text = "Marks";
-            Load += MarksForm_Load;
+            //Load += MarksForm_Load;
             ((System.ComponentModel.ISupportInitialize)Marks_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();

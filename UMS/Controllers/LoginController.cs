@@ -8,13 +8,13 @@ namespace UMS.Controllers
         private readonly string _connectionString;
         public LoginController(string connectionString) => _connectionString = connectionString;
 
-        public DataRow Login(string username, string password)
+        public DataRow Login(string userId, string password)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("SELECT * FROM Users WHERE Username = @username AND Password = @password", conn);
-                cmd.Parameters.AddWithValue("@username", username);
+                var cmd = new SQLiteCommand("SELECT * FROM Users WHERE UserID = @userId AND Password = @password", conn);
+                cmd.Parameters.AddWithValue("@userId", userId);
                 cmd.Parameters.AddWithValue("@password", password);
 
                 var adapter = new SQLiteDataAdapter(cmd);
