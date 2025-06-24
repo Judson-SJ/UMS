@@ -87,8 +87,7 @@
               "RelativeToolTip": "UMS\\Views\\TimeTableForm.cs",
               "ViewState": "AgIAAIgAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T09:02:32.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T09:02:32.936Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "UMS\\Views\\SubjectsForm.cs",
               "ViewState": "AgIAAF8AAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T09:02:21.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T09:02:21.316Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "UMS\\Views\\StudentsForm.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAowB8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T09:02:08.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T09:02:08.298Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "UMS\\Views\\StaffForm.cs",
               "ViewState": "AgIAAHEAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T09:01:57.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T09:01:57.506Z"
             },
             {
               "$type": "Document",
@@ -139,8 +135,7 @@
               "RelativeToolTip": "UMS\\Views\\RoomForm.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T09:01:48.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T09:01:48.769Z"
             },
             {
               "$type": "Document",
@@ -152,8 +147,7 @@
               "RelativeToolTip": "UMS\\Views\\MarksForm.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T09:01:32.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T09:01:32.345Z"
             },
             {
               "$type": "Document",
@@ -165,8 +159,7 @@
               "RelativeToolTip": "UMS\\Views\\MainForm.cs",
               "ViewState": "AgIAAFcAAAAAAAAAAAAiwCEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T09:01:12.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T09:01:12.372Z"
             },
             {
               "$type": "Document",
@@ -178,8 +171,7 @@
               "RelativeToolTip": "UMS\\Views\\LoginForm.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwCUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T09:00:46.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T09:00:46.202Z"
             },
             {
               "$type": "Document",
@@ -191,8 +183,7 @@
               "RelativeToolTip": "UMS\\Views\\LecturersForm.cs",
               "ViewState": "AgIAAH8AAAAAAAAAAAAwwIMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T09:00:17.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T09:00:17.563Z"
             },
             {
               "$type": "Document",
@@ -204,8 +195,7 @@
               "RelativeToolTip": "UMS\\Views\\ExamForm.cs",
               "ViewState": "AgIAAHMAAAAAAAAAAAAwwBsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T08:59:36.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T08:59:36.506Z"
             },
             {
               "$type": "Document",
@@ -217,8 +207,7 @@
               "RelativeToolTip": "UMS\\Views\\CoursesForm.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T08:59:29.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T08:59:29.614Z"
             },
             {
               "$type": "Document",
@@ -230,8 +219,7 @@
               "RelativeToolTip": "UMS\\Views\\AdminForm.cs",
               "ViewState": "AgIAAF8AAAAAAAAAAAAswC4AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T08:55:52.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T08:55:52.121Z"
             }
           ]
         }
