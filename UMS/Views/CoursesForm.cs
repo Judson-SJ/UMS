@@ -41,10 +41,10 @@ namespace UMS.Views
         {
             try
             {
-                var courseName = CouseName_textBox.Text.Trim();
-                if (!string.IsNullOrEmpty(courseName))
+                var name = CouseName_textBox.Text.Trim();
+                if (!string.IsNullOrEmpty(name))
                 {
-                    _controller.AddCourse(courseName);
+                    _controller.AddCourse(name);
                     MessageBox.Show("Course added successfully.");
                     LoadCourses();
                     ClearFields();
@@ -66,8 +66,8 @@ namespace UMS.Views
             {
                 if (int.TryParse(CourseID_textBox.Text, out int courseId))
                 {
-                    var courseName = CouseName_textBox.Text.Trim();
-                    _controller.UpdateCourse(courseId, courseName);
+                    var name = CouseName_textBox.Text.Trim();
+                    _controller.UpdateCourse(courseId, name);
                     MessageBox.Show("Course updated successfully.");
                     LoadCourses();
                     ClearFields();
@@ -111,7 +111,7 @@ namespace UMS.Views
             {
                 var row = Courses_dataGridView.Rows[e.RowIndex];
                 CourseID_textBox.Text = row.Cells["CourseID"].Value.ToString();
-                CouseName_textBox.Text = row.Cells["CourseName"].Value.ToString();
+                CouseName_textBox.Text = row.Cells["Name"].Value.ToString();
             }
         }
 

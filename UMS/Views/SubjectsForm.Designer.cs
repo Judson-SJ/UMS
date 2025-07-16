@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Subject_ID_textBox = new TextBox();
+            SubjectID_textBox = new TextBox();
             Subject_ID_label = new Label();
-            Subject_textBox = new TextBox();
+            SubjectName_textBox = new TextBox();
             Subject_label = new Label();
             Lecture_label = new Label();
             Subjects_dataGridView = new DataGridView();
             Delete_button = new Button();
-            button1 = new Button();
+            Add_button = new Button();
             Update_button = new Button();
             Course_label = new Label();
             Course_comboBox = new ComboBox();
@@ -43,13 +43,12 @@
             ((System.ComponentModel.ISupportInitialize)Subjects_dataGridView).BeginInit();
             SuspendLayout();
             // 
-            // Subject_ID_textBox
+            // SubjectID_textBox
             // 
-            Subject_ID_textBox.Location = new Point(113, 19);
-            Subject_ID_textBox.Name = "Subject_ID_textBox";
-            Subject_ID_textBox.Size = new Size(243, 27);
-            Subject_ID_textBox.TabIndex = 31;
-            //Subject_ID_textBox.TextChanged += Subject_ID_01_textBox_TextChanged;
+            SubjectID_textBox.Location = new Point(113, 19);
+            SubjectID_textBox.Name = "SubjectID_textBox";
+            SubjectID_textBox.Size = new Size(243, 27);
+            SubjectID_textBox.TabIndex = 31;
             // 
             // Subject_ID_label
             // 
@@ -61,12 +60,12 @@
             Subject_ID_label.TabIndex = 30;
             Subject_ID_label.Text = "Subject ID :";
             // 
-            // Subject_textBox
+            // SubjectName_textBox
             // 
-            Subject_textBox.Location = new Point(447, 19);
-            Subject_textBox.Name = "Subject_textBox";
-            Subject_textBox.Size = new Size(327, 27);
-            Subject_textBox.TabIndex = 29;
+            SubjectName_textBox.Location = new Point(447, 19);
+            SubjectName_textBox.Name = "SubjectName_textBox";
+            SubjectName_textBox.Size = new Size(327, 27);
+            SubjectName_textBox.TabIndex = 29;
             // 
             // Subject_label
             // 
@@ -110,17 +109,17 @@
             Delete_button.Text = "Delete";
             Delete_button.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // Add_button
             // 
-            button1.BackColor = SystemColors.GrayText;
-            button1.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ButtonFace;
-            button1.Location = new Point(261, 152);
-            button1.Name = "button1";
-            button1.Size = new Size(81, 29);
-            button1.TabIndex = 32;
-            button1.Text = "Add";
-            button1.UseVisualStyleBackColor = false;
+            Add_button.BackColor = SystemColors.GrayText;
+            Add_button.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Add_button.ForeColor = SystemColors.ButtonFace;
+            Add_button.Location = new Point(261, 152);
+            Add_button.Name = "Add_button";
+            Add_button.Size = new Size(81, 29);
+            Add_button.TabIndex = 32;
+            Add_button.Text = "Add";
+            Add_button.UseVisualStyleBackColor = false;
             // 
             // Update_button
             // 
@@ -172,11 +171,11 @@
             Controls.Add(Course_label);
             Controls.Add(Subjects_dataGridView);
             Controls.Add(Delete_button);
-            Controls.Add(button1);
+            Controls.Add(Add_button);
             Controls.Add(Update_button);
-            Controls.Add(Subject_ID_textBox);
+            Controls.Add(SubjectID_textBox);
             Controls.Add(Subject_ID_label);
-            Controls.Add(Subject_textBox);
+            Controls.Add(SubjectName_textBox);
             Controls.Add(Subject_label);
             Controls.Add(Lecture_label);
             FormBorderStyle = FormBorderStyle.None;
@@ -190,14 +189,14 @@
 
         #endregion
 
-        private TextBox Subject_ID_textBox;
+        private TextBox SubjectID_textBox;
         private Label Subject_ID_label;
-        private TextBox Subject_textBox;
+        private TextBox SubjectName_textBox;
         private Label Subject_label;
         private Label Lecture_label;
         private DataGridView Subjects_dataGridView;
         private Button Delete_button;
-        private Button button1;
+        private Button Add_button;
         private Button Update_button;
         private Label Course_label;
         private ComboBox Course_comboBox;

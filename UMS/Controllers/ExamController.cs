@@ -13,7 +13,7 @@ namespace UMS.Controllers
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("INSERT INTO Exams (ExamName, SubjectID) VALUES (@name, @subjectId)", conn);
+                var cmd = new SQLiteCommand("INSERT INTO Exams (Name, SubjectID) VALUES (@name, @subjectId)", conn);
                 cmd.Parameters.AddWithValue("@name", name);
                 cmd.Parameters.AddWithValue("@subjectId", subjectId);
                 cmd.ExecuteNonQuery();

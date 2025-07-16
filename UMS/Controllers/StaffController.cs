@@ -13,13 +13,12 @@ namespace UMS.Controllers
         private readonly string _connectionString;
         public StaffController(string connectionString) => _connectionString = connectionString;
 
-        public void AddStaff(int staffId, int userId, string name, string address, string phoneNo)
+        public void AddStaff(int userId, string name, string address, string phoneNo)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("INSERT INTO Staff (StaffID, UserID, Name, Address, PhoneNo) VALUES (@staffId, @userId, @name, @address, @phoneNo)", conn);
-                cmd.Parameters.AddWithValue("@staffId", staffId);
+                var cmd = new SQLiteCommand("INSERT INTO Staff (UserID, Name, Address, PhoneNo) VALUES (@userId, @name, @address, @phoneNo)", conn);
                 cmd.Parameters.AddWithValue("@userId", userId);
                 cmd.Parameters.AddWithValue("@name", name);
                 cmd.Parameters.AddWithValue("@address", address);
@@ -33,7 +32,7 @@ namespace UMS.Controllers
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("SELECT s.StaffID, s.Name, s.Address, s.PhoneNo FROM Staff s INNER JOIN Users u ON u.UserID = s.UserID", conn);
+                var cmd = new SQLiteCommand("SELECT s.StaffID, s.UserID, s.Name, s.Address, s.PhoneNo\r\nFROM Staff s\r\nINNER JOIN Users u ON u.UserID = s.UserID\r\n", conn);
                 var adapter = new SQLiteDataAdapter(cmd);
                 var dt = new DataTable();
                 adapter.Fill(dt);
@@ -46,7 +45,7 @@ namespace UMS.Controllers
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("UPDATE Staff SET Name = @name, StaffID = @staffId WHERE StaffID = @staffId", conn);
+                var cmd = new SQLiteCommand("UPDATE Staff SET Name = @name, Address = @address, PhoneNo = @phoneNo WHERE StaffID = @staffId", conn);
                 cmd.Parameters.AddWithValue("@staffId", staffId);
                 cmd.Parameters.AddWithValue("@userId", userId);
                 cmd.Parameters.AddWithValue("@name", name);

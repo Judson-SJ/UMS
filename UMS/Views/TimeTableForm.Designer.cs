@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dateTimePicker1 = new DateTimePicker();
+            DateTimePicker = new DateTimePicker();
             TimeTable_dataGridView = new DataGridView();
             SubjectID_comboBox = new ComboBox();
             SubjectID_label = new Label();
@@ -39,20 +39,20 @@
             LectureID_comboBox = new ComboBox();
             LectureID_label = new Label();
             Delete_button = new Button();
-            button1 = new Button();
+            Add_button = new Button();
             Update_button = new Button();
             Date_label = new Label();
             ID_label = new Label();
-            ID_textBox = new TextBox();
+            TimeTableID_textBox = new TextBox();
             ((System.ComponentModel.ISupportInitialize)TimeTable_dataGridView).BeginInit();
             SuspendLayout();
             // 
-            // dateTimePicker1
+            // DateTimePicker
             // 
-            dateTimePicker1.Location = new Point(87, 12);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(156, 27);
-            dateTimePicker1.TabIndex = 0;
+            DateTimePicker.Location = new Point(87, 12);
+            DateTimePicker.Name = "DateTimePicker";
+            DateTimePicker.Size = new Size(156, 27);
+            DateTimePicker.TabIndex = 0;
             // 
             // TimeTable_dataGridView
             // 
@@ -63,7 +63,6 @@
             TimeTable_dataGridView.RowHeadersWidth = 51;
             TimeTable_dataGridView.Size = new Size(776, 212);
             TimeTable_dataGridView.TabIndex = 14;
-            //TimeTable_dataGridView.CellContentClick += dataGridView2_CellContentClick;
             // 
             // SubjectID_comboBox
             // 
@@ -73,7 +72,6 @@
             SubjectID_comboBox.Name = "SubjectID_comboBox";
             SubjectID_comboBox.Size = new Size(162, 28);
             SubjectID_comboBox.TabIndex = 39;
-            //SubjectID_comboBox.SelectedIndexChanged += SubjectID_comboBox_SelectedIndexChanged;
             // 
             // SubjectID_label
             // 
@@ -155,17 +153,17 @@
             Delete_button.Text = "Delete";
             Delete_button.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // Add_button
             // 
-            button1.BackColor = SystemColors.GrayText;
-            button1.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ButtonFace;
-            button1.Location = new Point(230, 125);
-            button1.Name = "button1";
-            button1.Size = new Size(81, 29);
-            button1.TabIndex = 46;
-            button1.Text = "Add";
-            button1.UseVisualStyleBackColor = false;
+            Add_button.BackColor = SystemColors.GrayText;
+            Add_button.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Add_button.ForeColor = SystemColors.ButtonFace;
+            Add_button.Location = new Point(230, 125);
+            Add_button.Name = "Add_button";
+            Add_button.Size = new Size(81, 29);
+            Add_button.TabIndex = 46;
+            Add_button.Text = "Add";
+            Add_button.UseVisualStyleBackColor = false;
             // 
             // Update_button
             // 
@@ -199,12 +197,12 @@
             ID_label.TabIndex = 51;
             ID_label.Text = "ID :";
             // 
-            // ID_textBox
+            // TimeTableID_textBox
             // 
-            ID_textBox.Location = new Point(87, 58);
-            ID_textBox.Name = "ID_textBox";
-            ID_textBox.Size = new Size(156, 27);
-            ID_textBox.TabIndex = 52;
+            TimeTableID_textBox.Location = new Point(87, 58);
+            TimeTableID_textBox.Name = "TimeTableID_textBox";
+            TimeTableID_textBox.Size = new Size(156, 27);
+            TimeTableID_textBox.TabIndex = 52;
             // 
             // TimeTableForm
             // 
@@ -212,11 +210,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(801, 452);
             ControlBox = false;
-            Controls.Add(ID_textBox);
+            Controls.Add(TimeTableID_textBox);
             Controls.Add(ID_label);
             Controls.Add(Date_label);
             Controls.Add(Delete_button);
-            Controls.Add(button1);
+            Controls.Add(Add_button);
             Controls.Add(Update_button);
             Controls.Add(LectureID_comboBox);
             Controls.Add(LectureID_label);
@@ -227,7 +225,7 @@
             Controls.Add(SubjectID_comboBox);
             Controls.Add(SubjectID_label);
             Controls.Add(TimeTable_dataGridView);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(DateTimePicker);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;
@@ -240,7 +238,7 @@
 
         #endregion
 
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker DateTimePicker;
         private DataGridView TimeTable_dataGridView;
         private ComboBox SubjectID_comboBox;
         private Label SubjectID_label;
@@ -251,10 +249,10 @@
         private ComboBox LectureID_comboBox;
         private Label LectureID_label;
         private Button Delete_button;
-        private Button button1;
+        private Button Add_button;
         private Button Update_button;
         private Label Date_label;
         private Label ID_label;
-        private TextBox ID_textBox;
+        private TextBox TimeTableID_textBox;
     }
 }

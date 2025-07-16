@@ -44,10 +44,12 @@ namespace UMS.Controllers
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("UPDATE Users SET Name = @name, Password = @password WHERE UserID = @userId", conn);
+                var cmd = new SQLiteCommand(
+                    "UPDATE Users SET Name = @name, Password = @password, Role = @role WHERE UserID = @userId", conn);
                 cmd.Parameters.AddWithValue("@name", name);
                 cmd.Parameters.AddWithValue("@password", password);
                 cmd.Parameters.AddWithValue("@role", role);
+                cmd.Parameters.AddWithValue("@userId", userId); // correct order
                 cmd.ExecuteNonQuery();
             }
         }
@@ -57,7 +59,7 @@ namespace UMS.Controllers
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("DELETE FROM = Users WHERE UserID = @userId", conn);
+                var cmd = new SQLiteCommand("DELETE FROM  Users WHERE UserID = @userId", conn);
                 cmd.Parameters.AddWithValue("@userId", userId);
                 cmd.ExecuteNonQuery();
             }

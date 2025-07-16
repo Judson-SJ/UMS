@@ -8,15 +8,16 @@ namespace UMS.Controllers
         private readonly string _connectionString;
         public MarkController(string connectionString) => _connectionString = connectionString;
 
-        public void AddMark(int studentId, int examId, int score)
+        public void AddMark(int studentId, int examId, int score, string grade)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("INSERT INTO Marks (StudentID, ExamID, Score) VALUES (@studentId, @examId, @score)", conn);
+                var cmd = new SQLiteCommand("INSERT INTO Marks (StudentID, ExamID, Score, Grade) VALUES (@studentId, @examId, @score, @grade)", conn);
                 cmd.Parameters.AddWithValue("@studentId", studentId);
                 cmd.Parameters.AddWithValue("@examId", examId);
                 cmd.Parameters.AddWithValue("@score", score);
+                cmd.Parameters.AddWithValue("@grade", grade);
                 cmd.ExecuteNonQuery();
             }
         }
@@ -34,7 +35,7 @@ namespace UMS.Controllers
             }
         }
 
-        public void UpdateMark(int markId, int score)
+        public void UpdateMark(int markId,int studentId,int examId, int score, string grade)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {
@@ -42,6 +43,9 @@ namespace UMS.Controllers
                 var cmd = new SQLiteCommand("UPDATE Marks SET Score = @score WHERE MarkID = @id", conn);
                 cmd.Parameters.AddWithValue("@score", score);
                 cmd.Parameters.AddWithValue("@id", markId);
+                cmd.Parameters.AddWithValue("@studentId", studentId);
+                cmd.Parameters.AddWithValue("@examId", examId);
+                cmd.Parameters.AddWithValue("@grade", grade);
                 cmd.ExecuteNonQuery();
             }
         }

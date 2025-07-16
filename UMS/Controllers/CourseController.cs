@@ -19,7 +19,7 @@ namespace UMS.Controllers
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("INSERT INTO Courses (CourseName) VALUES (@name)", conn);
+                var cmd = new SQLiteCommand("INSERT INTO Courses (Name) VALUES (@name)", conn);
                 cmd.Parameters.AddWithValue("@name", name);
                 cmd.ExecuteNonQuery();
             }
@@ -30,7 +30,7 @@ namespace UMS.Controllers
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("UPDATE Courses SET CourseName = @name WHERE CourseID = @courseId", conn);
+                var cmd = new SQLiteCommand("UPDATE Courses SET Name = @name WHERE CourseID = @courseId", conn);
                 cmd.Parameters.AddWithValue("@name", name);
                 cmd.Parameters.AddWithValue("@courseId", courseId);
                 cmd.ExecuteNonQuery();

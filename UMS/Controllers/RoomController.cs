@@ -13,7 +13,7 @@ namespace UMS.Controllers
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("INSERT INTO Rooms (RoomName, RoomType) VALUES (@name, @type)", conn);
+                var cmd = new SQLiteCommand("INSERT INTO Rooms (Name, Type) VALUES (@name, @type)", conn);
                 cmd.Parameters.AddWithValue("@name", name);
                 cmd.Parameters.AddWithValue("@type", type);
                 cmd.ExecuteNonQuery();

@@ -8,14 +8,17 @@ namespace UMS.Controllers
         private readonly string _connectionString;
         public StudentController(string connectionString) => _connectionString = connectionString;
 
-        public void AddStudent(string name, string course)
+        public void AddStudent(int userId, string name, string address, string course, string phoneNo)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("INSERT INTO Students (Name, Course) VALUES (@name, @course)", conn);
+                var cmd = new SQLiteCommand("INSERT INTO Students (UserId, Name, Address, Course, PhoneNo) VALUES (@userId, @name, @address, @course, @phoneNo)", conn);
+                cmd.Parameters.AddWithValue("@userId", userId);
                 cmd.Parameters.AddWithValue("@name", name);
+                cmd.Parameters.AddWithValue("@address", address);
                 cmd.Parameters.AddWithValue("@course", course);
+                cmd.Parameters.AddWithValue("@phoneNo", phoneNo);
                 cmd.ExecuteNonQuery();
             }
         }
@@ -25,7 +28,16 @@ namespace UMS.Controllers
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("SELECT StudentID, Name, Course FROM Students", conn);
+                var cmd = new SQLiteCommand(@"
+            SELECT 
+                s.StudentID, 
+                s.UserID, 
+                s.Name, 
+                s.Address, 
+                s.Course, 
+                s.PhoneNo 
+            FROM Students s
+            INNER JOIN Users u ON u.UserID = s.UserID", conn);
                 var adapter = new SQLiteDataAdapter(cmd);
                 var dt = new DataTable();
                 adapter.Fill(dt);
@@ -33,14 +45,16 @@ namespace UMS.Controllers
             }
         }
 
-        public void UpdateStudent(int studentId, string name, string course)
+        public void UpdateStudent(int studentId,int userId, string name,string address, string course, string phoneNo)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("UPDATE Students SET Name = @name, Course = @course WHERE StudentID = @studentId", conn);
+                var cmd = new SQLiteCommand("UPDATE Students SET Name = @name, Address = @address, Course = @course, PhoneNo = @phoneNo WHERE StudentID = @studentId", conn);
                 cmd.Parameters.AddWithValue("@name", name);
+                cmd.Parameters.AddWithValue("@address", address);
                 cmd.Parameters.AddWithValue("@course", course);
+                cmd.Parameters.AddWithValue("@phoneNo", phoneNo);
                 cmd.Parameters.AddWithValue("@studentId", studentId);
                 cmd.ExecuteNonQuery();
             }

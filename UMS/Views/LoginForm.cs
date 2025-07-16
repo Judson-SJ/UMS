@@ -13,6 +13,7 @@ namespace UMS
             InitializeComponent();
             _controller = new LoginController("Data Source=UMS_DB.db;Version=3;");
             Login_button.Click += Login_button_Click;
+            this.AcceptButton = Login_button;
         }
 
         private void Login_button_Click(object sender, EventArgs e)

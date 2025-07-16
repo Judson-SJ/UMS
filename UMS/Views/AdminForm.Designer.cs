@@ -35,7 +35,7 @@
             Update_button = new Button();
             Add_button = new Button();
             Name_textBox = new TextBox();
-            UserID_textBox = new TextBox();
+            AdminID_textBox = new TextBox();
             Name_label = new Label();
             UserID_label = new Label();
             ((System.ComponentModel.ISupportInitialize)Admins_dataGridView).BeginInit();
@@ -113,12 +113,13 @@
             Name_textBox.Size = new Size(395, 27);
             Name_textBox.TabIndex = 35;
             // 
-            // UserID_textBox
+            // AdminID_textBox
             // 
-            UserID_textBox.Location = new Point(120, 20);
-            UserID_textBox.Name = "UserID_textBox";
-            UserID_textBox.Size = new Size(164, 27);
-            UserID_textBox.TabIndex = 34;
+            AdminID_textBox.Location = new Point(120, 20);
+            AdminID_textBox.Name = "AdminID_textBox";
+            AdminID_textBox.Size = new Size(164, 27);
+            AdminID_textBox.TabIndex = 34;
+            AdminID_textBox.TextChanged += UserID_textBox_TextChanged;
             // 
             // Name_label
             // 
@@ -152,7 +153,7 @@
             Controls.Add(Update_button);
             Controls.Add(Add_button);
             Controls.Add(Name_textBox);
-            Controls.Add(UserID_textBox);
+            Controls.Add(AdminID_textBox);
             Controls.Add(Name_label);
             Controls.Add(UserID_label);
             FormBorderStyle = FormBorderStyle.None;
@@ -172,7 +173,7 @@
         private Button Update_button;
         private Button Add_button;
         private TextBox Name_textBox;
-        private TextBox UserID_textBox;
+        private TextBox AdminID_textBox;
         private Label Name_label;
         private Label UserID_label;
     }

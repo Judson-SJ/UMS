@@ -14,13 +14,12 @@ namespace UMS.Controllers
         private readonly string _connectionString;
         public AdminController(string connectionString) => _connectionString = connectionString;
 
-        public void AddAdmin(int adminId, int userId, string name)
+        public void AddAdmin(int userId, string name)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
-                var cmd = new SQLiteCommand("INSERT INTO Admins (AdminID, UserID, Name) VALUES (@adminId, @userId, @name)", conn);
-                cmd.Parameters.AddWithValue("@adminId", adminId);
+                var cmd = new SQLiteCommand("INSERT INTO Admins (UserID, Name) VALUES (@userId, @name)", conn);
                 cmd.Parameters.AddWithValue("@userId", userId);
                 cmd.Parameters.AddWithValue("@name", name);
                 cmd.ExecuteNonQuery();

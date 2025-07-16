@@ -12,17 +12,16 @@ namespace UMS.Controllers
             _connectionString = connectionString;
         }
 
-        public void AddTimetable(int timeTableId, int subjectId, int lectureId, string date, string timeSlot, int roomId)
+        public void AddTimetable(int subjectId, int lectureId, string date, string timeSlot, int roomId)
         {
             using (var conn = new SQLiteConnection(_connectionString))
             {
                 conn.Open();
                 var cmd = new SQLiteCommand(@"INSERT INTO Timetable 
-                    (TimeTableID, SubjectID, LectureID, Date, TimeSlot, RoomID) 
+                    (SubjectID, LectureID, Date, TimeSlot, RoomID) 
                     VALUES 
-                    (@timeTableId, @subjectId, @lectureId, @date, @timeSlot, @roomId)", conn);
+                    (@subjectId, @lectureId, @date, @timeSlot, @roomId)", conn);
 
-                cmd.Parameters.AddWithValue("@timeTableId", timeTableId);
                 cmd.Parameters.AddWithValue("@subjectId", subjectId);
                 cmd.Parameters.AddWithValue("@lectureId", lectureId);
                 cmd.Parameters.AddWithValue("@date", date);
@@ -77,15 +76,19 @@ namespace UMS.Controllers
                 conn.Open();
                 var query = @"
                     SELECT 
-                        t.TimeTableID, 
-                        s.Name AS SubjectName, 
-                        r.Name AS RoomName, 
-                        t.Date, 
+                        t.TimeTableID,
+                        s.SubjectID,
+                        l.LectureID,
+                        r.RoomID,
+                        s.Name,
+                        l.Name AS LecturerName,
+                        r.Name AS RoomName,
+                        t.Date,
                         t.TimeSlot
                     FROM Timetable t
                     JOIN Subjects s ON t.SubjectID = s.SubjectID
-                    JOIN Rooms r ON t.RoomID = r.RoomID
-                    ORDER BY t.Date, t.TimeSlot";
+                    JOIN Lecturers l ON t.LectureID = l.LectureID
+                    JOIN Rooms r ON t.RoomID = r.RoomID";
 
                 var cmd = new SQLiteCommand(query, conn);
                 var adapter = new SQLiteDataAdapter(cmd);

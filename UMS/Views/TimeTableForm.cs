@@ -20,16 +20,16 @@ namespace UMS.Views
         {
             InitializeComponent();
             _controller = new TimetableController("Data Source=UMS_DB.db;Version=3;");
-            LoadTimetables();
+            LoadTimeTable();
             LoadComboBoxes();
 
-            button1.Click += Add_button_Click;
+            Add_button.Click += Add_button_Click;
             Update_button.Click += Update_button_Click;
             Delete_button.Click += Delete_button_Click;
             TimeTable_dataGridView.CellClick += TimeTable_dataGridView_CellClick;
         }
 
-        private void LoadTimetables()
+        private void LoadTimeTable()
         {
             TimeTable_dataGridView.DataSource = _controller.GetAllTimetables();
         }
@@ -54,34 +54,33 @@ namespace UMS.Views
 
         private void ClearFields()
         {
-            ID_textBox.Text = "";
+            TimeTableID_textBox.Text = "";
             SubjectID_comboBox.SelectedIndex = -1;
-            TimeSlot_comboBox.SelectedIndex = -1;
-            RoomID_comboBox.SelectedIndex = -1;
             LectureID_comboBox.SelectedIndex = -1;
-            dateTimePicker1.Value = DateTime.Today;
+            DateTimePicker.Text = "";
+            TimeSlot_comboBox.Text = "";
+            RoomID_comboBox.SelectedIndex = -1;
         }
 
         private void Add_button_Click(object sender, EventArgs e)
         {
             try
             {
-                if (int.TryParse(ID_textBox.Text, out int timetableId) &&
-                    int.TryParse(SubjectID_comboBox.Text, out int subjectId) &&
-                    int.TryParse(RoomID_comboBox.Text, out int roomId) &&
-                    int.TryParse(LectureID_comboBox.Text, out int lectureId))
+                if (int.TryParse(SubjectID_comboBox.Text, out int subjectId) &&
+                    int.TryParse(LectureID_comboBox.Text, out int lectureId) &&
+                    int.TryParse(RoomID_comboBox.Text, out int roomId))
                 {
-                    string date = dateTimePicker1.Value.ToShortDateString();
+                    string date = DateTimePicker.Text;
                     string timeSlot = TimeSlot_comboBox.Text;
 
-                    _controller.AddTimetable(timetableId, subjectId, lectureId, date, timeSlot, roomId);
+                    _controller.AddTimetable(subjectId, lectureId, date, timeSlot, roomId);
                     MessageBox.Show("Timetable added.");
-                    LoadTimetables();
+                    LoadTimeTable();
                     ClearFields();
                 }
                 else
                 {
-                    MessageBox.Show("Please enter valid values.");
+                    MessageBox.Show("Please provide valid numeric IDs.");
                 }
             }
             catch (Exception ex)
@@ -94,22 +93,22 @@ namespace UMS.Views
         {
             try
             {
-                if (int.TryParse(ID_textBox.Text, out int timetableId) &&
+                if (int.TryParse(TimeTableID_textBox.Text, out int timetableId) &&
                     int.TryParse(SubjectID_comboBox.Text, out int subjectId) &&
-                    int.TryParse(RoomID_comboBox.Text, out int roomId) &&
-                    int.TryParse(LectureID_comboBox.Text, out int lectureId))
+                    int.TryParse(LectureID_comboBox.Text, out int lectureId) &&
+                    int.TryParse(RoomID_comboBox.Text, out int roomId))
                 {
-                    string date = dateTimePicker1.Value.ToShortDateString();
+                    string date = DateTimePicker.Text;
                     string timeSlot = TimeSlot_comboBox.Text;
 
                     _controller.UpdateTimetable(timetableId, subjectId, lectureId, date, timeSlot, roomId);
                     MessageBox.Show("Timetable updated.");
-                    LoadTimetables();
+                    LoadTimeTable();
                     ClearFields();
                 }
                 else
                 {
-                    MessageBox.Show("Please enter valid values.");
+                    MessageBox.Show("Please provide valid numeric IDs.");
                 }
             }
             catch (Exception ex)
@@ -122,16 +121,16 @@ namespace UMS.Views
         {
             try
             {
-                if (int.TryParse(ID_textBox.Text, out int timetableId))
+                if (int.TryParse(TimeTableID_textBox.Text, out int timetableId))
                 {
                     _controller.DeleteTimetable(timetableId);
                     MessageBox.Show("Timetable deleted.");
-                    LoadTimetables();
+                    LoadTimeTable();
                     ClearFields();
                 }
                 else
                 {
-                    MessageBox.Show("Please enter a valid timetable ID.");
+                    MessageBox.Show("Enter a valid timetable ID.");
                 }
             }
             catch (Exception ex)
@@ -142,13 +141,15 @@ namespace UMS.Views
 
         private void TimeTable_dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && TimeTable_dataGridView.Rows[e.RowIndex].Cells["TimeTableID"].Value != null)
+            if (e.RowIndex >= 0)
             {
                 var row = TimeTable_dataGridView.Rows[e.RowIndex];
-                ID_textBox.Text = row.Cells["TimeTableID"].Value.ToString();
-                SubjectID_comboBox.Text = row.Cells["SubjectName"].Value.ToString();
+                TimeTableID_textBox.Text = row.Cells["TimeTableID"].Value.ToString();
+                SubjectID_comboBox.Text = row.Cells["SubjectID"].Value.ToString();
+                LectureID_comboBox.Text = row.Cells["LectureID"].Value.ToString();
+                DateTimePicker.Text = row.Cells["Date"].Value.ToString();
                 TimeSlot_comboBox.Text = row.Cells["TimeSlot"].Value.ToString();
-                RoomID_comboBox.Text = row.Cells["RoomName"].Value.ToString();
+                RoomID_comboBox.Text = row.Cells["RoomID"].Value.ToString();
             }
         }
     }

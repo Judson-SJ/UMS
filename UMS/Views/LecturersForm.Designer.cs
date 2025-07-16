@@ -33,8 +33,8 @@
             Update_button = new Button();
             Add_button = new Button();
             Address_textBox = new TextBox();
-            StudentName_textBox = new TextBox();
-            StudentID_textBox = new TextBox();
+            Name_textBox = new TextBox();
+            LectureID_textBox = new TextBox();
             Address_label = new Label();
             Name_label = new Label();
             LectureID_label = new Label();
@@ -98,19 +98,19 @@
             Address_textBox.Size = new Size(416, 27);
             Address_textBox.TabIndex = 15;
             // 
-            // StudentName_textBox
+            // Name_textBox
             // 
-            StudentName_textBox.Location = new Point(372, 25);
-            StudentName_textBox.Name = "StudentName_textBox";
-            StudentName_textBox.Size = new Size(416, 27);
-            StudentName_textBox.TabIndex = 14;
+            Name_textBox.Location = new Point(372, 25);
+            Name_textBox.Name = "Name_textBox";
+            Name_textBox.Size = new Size(416, 27);
+            Name_textBox.TabIndex = 14;
             // 
-            // StudentID_textBox
+            // LectureID_textBox
             // 
-            StudentID_textBox.Location = new Point(105, 25);
-            StudentID_textBox.Name = "StudentID_textBox";
-            StudentID_textBox.Size = new Size(168, 27);
-            StudentID_textBox.TabIndex = 13;
+            LectureID_textBox.Location = new Point(105, 25);
+            LectureID_textBox.Name = "LectureID_textBox";
+            LectureID_textBox.Size = new Size(168, 27);
+            LectureID_textBox.TabIndex = 13;
             // 
             // Address_label
             // 
@@ -131,7 +131,6 @@
             Name_label.Size = new Size(55, 17);
             Name_label.TabIndex = 11;
             Name_label.Text = "Name :";
-            //Name_label.Click += Name_label_Click;
             // 
             // LectureID_label
             // 
@@ -152,7 +151,6 @@
             PhoneNo_label.Size = new Size(81, 17);
             PhoneNo_label.TabIndex = 20;
             PhoneNo_label.Text = "Phone No :";
-            //PhoneNo_label.Click += PhoneNo_label_Click;
             // 
             // PhoneNo_textBox
             // 
@@ -193,8 +191,8 @@
             Controls.Add(Update_button);
             Controls.Add(Add_button);
             Controls.Add(Address_textBox);
-            Controls.Add(StudentName_textBox);
-            Controls.Add(StudentID_textBox);
+            Controls.Add(Name_textBox);
+            Controls.Add(LectureID_textBox);
             Controls.Add(Address_label);
             Controls.Add(Name_label);
             Controls.Add(LectureID_label);
@@ -213,8 +211,8 @@
         private Button Update_button;
         private Button Add_button;
         private TextBox Address_textBox;
-        private TextBox StudentName_textBox;
-        private TextBox StudentID_textBox;
+        private TextBox Name_textBox;
+        private TextBox LectureID_textBox;
         private Label Address_label;
         private Label Name_label;
         private Label LectureID_label;
